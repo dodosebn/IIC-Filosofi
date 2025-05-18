@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Site Title-->
+    <title>filosofi | learn & thrive</title> 
+    <meta name="description" content="filosofi"> 
+    <!-- Bootstrap CSS file-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flickity CSS file-->
+    <link href="assets/css/flickity.min.css" rel="stylesheet">
+    <!-- Main CSS file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <!-- Fontawesome 5 CSS file-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Magnific Popup CSS-->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OPEN SANS, LATO & MONTSERRAT==== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+   <!-- Google Translate API -->
+
+<script type="text/javascript">
+      function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    let googleSelect = document.querySelector(".goog-te-combo");
+
+    if (googleSelect) {
+        googleSelect.value = lang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+
+    // Update the displayed language in the dropdown
+    document.getElementById("selectedLang").innerText = lang.toUpperCase();
+
+    // Save selected language in local storage
+    localStorage.setItem("selectedLang", lang);
+}
+
+// Ensure language persists on page reload
+document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("selectedLang") || "en";
+    document.getElementById("selectedLang").innerText = savedLang.toUpperCase();
+
+    let googleSelect = document.querySelector(".goog-te-combo");
+    if (googleSelect) {
+        googleSelect.value = savedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+});
+
+   </script> 
+  </head>
+  <body>
+
+  <style>
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+          display: none !important;
+      }
+      body{
+          top: 0px !important;
+      }
+  </style>
+
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+
+
+
+  <div class="website-header header-color-bg">
+    <nav class="navigation-bar ">
+     
+      <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+               
+
+      <ul class="mobile-cta">
+        <!--<li class="translation-contain">-->
+        <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
+        <!--    <span style="font-weight: 700; color: #fff; ">|</span>-->
+        <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
+        <!--</li>-->
+
+        <!-- Social nav --> 
+        <!-- <div class="header--scoial-icons">
+            <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
+            <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
+        </div> -->
+    </ul>
+
+    <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
+
+
+      <!-- Menu Icon -->
+      <div class="menu-icons" onclick="toggleMenu()">
+        <i class="fas fa-bars menu-icon"></i>
+        <i class="fas fa-times menu-icon"></i>
+      </div>
+            
+       
+      <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
+        <ul class="navigation-bar-nav">
+            <li class="navigation-item active lato-regular notranslate">
+                <a class="navigation-link" href="/">Home</a>
+            </li>
+            <li class="navigation-item lato-regular notranslate">
+                <a class="navigation-link" href="program.html">Program</a>
+            </li>
+            <li class="navigation-item lato-regular notranslate">
+                <a class="navigation-link" href="industry.html">Industry</a>
+            </li>
+            <li class="navigation-item lato-regular notranslate">
+              <a class="navigation-link" href="pros.html">PROS</a>
+            </li>
+            <!--<li class="navigation-item lato-regular notranslate">-->
+            <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
+            <!--</li>-->
+         <!-- <li class="navigation-item lato-regular notranslate">
+                <a class="navigation-link" href="corpers.html">CORPERS</a>
+            </li> -->
+        </ul>
+    
+        <!-- Move CTA here -->
+        <ul class="nav-cta">
+            <li class="lato-regular notranslate register-now-btn text-black" ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
+
+            <!--<li class="translation-contain">-->
+            <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
+            <!--    <span style="font-weight: 700; color: #fff; ">|</span>-->
+            <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
+            <!--</li>-->
+    
+            <!-- Social nav -->
+            <!-- <div class="header--scoial-icons">
+                <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
+                <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
+            </div> -->
+        </ul>
+    </div>
+    
+    </nav> 
+  </div>
+
+
+
+    
+    <!-- End Navbar-->
+
+
+    <style>
+      .image-container-sec-2 {
+        background: url('assets/images/home/h15.jpg') no-repeat center center;
+        background-size: cover;
+        width: 50%;
+        height: 600px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .industry-image-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+      }
+      .tabs-comtainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .indictry-card-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner-container-sec.industry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+      }
+      .report-btn-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+      .report-btn{
+        padding: 15px 60px ;
+         border-radius: 30px;
+        background-color: #1C1D1E;
+        color: #fff;
+        margin-top: -40px;
+      }
+      .report-btn:hover{
+        color: #fff;
+        background-color: #292929;
+      }
+    
+      @media (max-width: 1350px) {
+        .image-container-sec-2 {
+          height: 800px;
+          /* height: 50vh; */
+        }
+      }
+      @media (max-width: 1000px) {
+        .image-container-sec-2 {
+          height: 900px;
+          /* height: 50vh; */
+        }
+      }
+      @media (max-width: 993px) {
+        .image-container-sec-2 {
+          background-size: cover;
+          min-width: 50%;
+          /* height: 50vh; */
+          /* height: 400px; */
+        }
+      }
+      @media (max-width: 914px) {
+        .image-container-sec-2 {
+          background-size: cover;
+          width: 100%;
+          /* height: 50vh; */
+          height: 400px;
+        }
+      }
+      @media (max-width: 768px) {
+        .image-container-sec-2 {
+          height: 300px;
+      }
+      }
+      /* @media (max-width: 768px) {
+        .image-container-sec-2 {
+
+        }
+      } */
+    </style>
+
+    <article class="entry">
+      <div class="entry-content">
+
+        <!-- HEADER WITH ICONS ==== -->
+        <div class="bg-white-smoke home-header px-3 mb-1">
+          
+          <h1 class="mb-4 text-black  open-sans-bold">INDUSTRY</h1>
+          <!-- <p class="lead-1 text-black text-center mt-n1 mb-0 lato-regular ">
+            Industry report from UNESCO
+          </p> -->
+      </div>
+
+
+      <!-- =========SECTION ONE =========== -->
+     <div class="industry-image-section">
+      <img src="assets/images/industry.png" alt="INDUSTRY">
+     </div>
+
+           
+      <!-- ======================================UNESCO REOORT SUMMARY================== -->
+
+      <div class=" px-0  bg-white-smoke mt-2 ">
+        <div class=" inner-container-sec industry ">
+          <div class="col-lg-8  mt-md-2  pt-lg-4 pl-lg-7 px-3 pb-4 relative align-items-center">
+            <div class="pr-lg-6 pr-md-8 pr-4 report-text-box">
+              <h4 class="mb-2 text-black open-sans-bold ">
+                Our not-so-secret plan: Keep millions of film jobs 
+                and billions in box-office earnings in Africa. 
+              </h4>
+              <p class="lead text-dark mb-1 lato-regular">
+                A UNESCO report published in 2021 presents an encouraging outlook for Africa's 
+                film and audiovisual industry across 54 African countries. Although the report 
+                is comprehensive and addresses various topics, the financial and employment projections 
+                are particularly significant. It indicates that if major changes are implemented in the 
+                African film industry, it could generate an annual revenue of $20 billion and create 20 
+                million jobs. Those changes are in the form of training, professionalism, appealing 
+                story plots, and high-quality production value films and series. 
+              </p>
+                
+                <!-- <a 
+                class="btn btn-black-pearl lato-regular lead desktop-pdf-btn mt-4" 
+                href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
+                target="_blank">
+                Download the report summary
+                </a> -->
+                <!-- <a 
+                class="btn btn-black-pearl lato-regular lead pdf-btn" 
+                href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
+                target="_blank">
+                  Report summary
+                </a> -->
+            </div>
+            <!-- <div class="btn-container">
+              <a class="btn-white-outline" href="page-about-us.html">Read more</a>
+              <a class="btn-primary" href="page-contact.html">Contact us</a>
+            </div> -->
+          </div>
+         
+        
+        </div>
+      </div>
+
+      <!-- ================third SECTION============= -->
+      <div class="bg-white-smoke ">
+        <div class="pt-lg-8 pb-lg-5 pt-md-8 pb-md-5 pt-7 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="text-center mx-lg-0 mx-md-0 mx-3">
+                  <h2 class="mb-4">Advancing products, processes and solutions</h2>
+                  <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pb-lg-7 main">
+          <div class="row gx-lg-5 tabs-comtainer">
+            <!-- <div class="col-lg-6"><img class="height-px-420 object-fit-cover w-100" src="assets/images/home/h06.jpg" alt="home6"></div> -->
+            <div class="col-lg-6 mt-lg-0 mt-md-5 mt-5  ">
+              <nav class="pr-lg-5">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="h6 nav-link active mr-md-6 mr-3" id="nav-Stratigy-tab" data-toggle="tab" href="#nav-Stratigy" role="tab" aria-controls="nav-Stratigy" aria-selected="true">Stratigy</a><a class="h6 nav-link mr-md-6 mr-3" id="nav-Organization-tab" data-toggle="tab" href="#nav-Organization" role="tab" aria-controls="nav-Organization" aria-selected="false">Organization</a><a class="h6 nav-link mr-md-6 mr-3" id="nav-Development-tab" data-toggle="tab" href="#nav-Development" role="tab" aria-controls="nav-Development" aria-selected="false">Development</a><a class="h6 nav-link" id="nav-Delivery-tab" data-toggle="tab" href="#nav-Delivery" role="tab" aria-controls="nav-Delivery" aria-selected="false">Delivery</a></div>
+                <div class="tab-content mt-3" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-Stratigy" role="tabpanel" aria-labelledby="nav-Stratigy-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                      <p>Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Organization" role="tabpanel" aria-labelledby="nav-Organization-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsumg </p>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Development" role="tabpanel" aria-labelledby="nav-Development-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, </p>
+                      <p>Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Delivery" role="tabpanel" aria-labelledby="nav-Delivery-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,</p>
+                      <p>discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,</p>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pb-lg-9 pb-md-8 pb-7 ">
+          <div class="row  indictry-card-icons">
+            <!-- <div class="col-lg-6 order-lg-1 mt-lg-0 mt-md-5 mt-5"><img class="height-px-542 object-fit-cover w-100" src="assets/images/home/h7.jpg" alt="home7"></div> -->
+            <div class="col-lg-6 mt-lg-0 mt-md-5 mt-5">
+              <!-- <div class="pr-lg-6">
+                <p class="lead text-black-pearl font-weight-bold">Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                <p class="pb-4">Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+              </div> -->
+              <div class="row gx-lg-5 gx-md-5 mt-lg-4 mt-md-5 mt-5">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="bg-white px-4 py-4">
+                    <div class="px-2 py-2"><i class="mb-4 h1 display-4 fas fa-chart-area text-black-pearl"></i>
+                      <h4 class="mb-3">$20 Billion</h4>
+                      <p class="text-dim-gray mb-0">Annual revenue. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mt-lg-0 mt-md-0 mt-5">
+                  <div class="bg-white px-4 py-4">
+                    <div class="px-2 py-2"><i class="mb-4 h1 display-4 fas fa-charging-station text-black-pearl"></i>
+                      <h4 class="mb-3">20 Million</h4>
+                      <p class="text-dim-gray mb-0">High-paying Jobs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="report-btn-div">
+          <a 
+          class="report-btn" 
+          href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
+          target="_blank">
+            Report summary
+          </a>
+        </div>
+     
+
+      </div>
+
+
+                
+      </div>
+    </article>
+
+    
+   
+    
+  
+    
+
+    <!-- Footer-->
+     <footer class="site-footer">
+      <div class="container footer-widgets align-items-center">
+            <div><a class="footer-brand" href="/"><img src="/assets/images/logo/logo-filosofi-wht.png" alt="logo" ></a></div>
+          
+          <div class="footer-menu mt-4">
+            <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+            <ul class="list-unstyled list-inlinetrue ">
+            <li class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal" ><a href="influencer.html" >INFLUENCER</a></li>
+            </ul>
+          </div>
+                   
+            <div class="mt-4 social-icons-mobile">
+            <ul class="list-unstyled list-inlinetrue social-icons">
+              <li class=""><a href="https://www.facebook.com/ideaiscapital" target="_blank"><i class="fab fa-facebook-square icon"></i></a></li>
+              <li class=""><a href="https://www.instagram.com/ideaiscapital/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+              <li class=""><a href="https://www.tiktok.com/@ideaiscapital" target="_blank"><i class="fab fa-tiktok icon"></i></a></li>
+             
+              <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
+              <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+<!-- 
+              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>
+              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li> -->
+            </ul>
+          </div>
+      </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="footer-widget  text-center"> 
+              <p class="m-md-0 lato-regular">© 2025 An <a href="https://ideaiscapital.africa" class="idea-text notranslate">Idea is Capital </a>Company • All Rights Reserved</p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+    <!-- End Footer-->
+
+
+
+    <!-- javascript files-->
+    <!-- jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- lozad js-->
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos js-->
+    <script src="assets/js/aos.js"></script>
+    <!-- Slick flickity js-->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Magnific popup js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Countdown js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!-- CountTo js-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!-- Masonry js-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <!-- Global - Main js-->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
+  </body>
+</html>

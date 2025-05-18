@@ -1,0 +1,220 @@
+
+.entry-content{
+    margin-top: 100px;
+}
+
+.website-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1000;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.website-header.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Navigation container */
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* max-width: 1400px; */
+}
+
+/* Logo styling */
+.navigation-bar .brand-logo img {
+    /* position: absolute; */
+    /* top: 25px; */
+    height: 50px;
+   margin-left: -25px;
+    width: auto;
+}
+
+/* Desktop Navigation */
+.navigation-bar-collapse {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navigation-bar-nav {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navigation-bar-nav .navigation-item {
+    list-style: none;
+}
+
+.navigation-bar-nav .navigation-item .navigation-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.header-color-bg{
+    background: #000000;
+}
+
+/* Social icons and language switcher */
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.translation-contain a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    /* padding: 5px 10px; */
+}
+
+/* Social icons */
+.header--scoial-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header--scoial-icons li {
+    list-style: none;
+}
+
+.header--scoial-icons a img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Menu Icons (hidden on desktop) */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.menu-icons{
+    display: none;
+}
+.mobile-cta{
+    display: none;
+}
+.mobile-logo{
+    display: none;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: block;
+        /* background-color: red; */
+        position: absolute;
+        top: 45px;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    /* .entry-content{
+        margin-top: 70px;
+    } */
+
+    
+    .website-header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* position: relative; */
+        align-items: center;
+        padding-top: 25pxpx;
+        padding-bottom: 25px;
+    }
+    .navigation-bar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .navigation-bar-nav {
+        display: none; 
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .navigation-bar-nav.active {
+        display: flex;
+    }
+    .navigation-bar .brand-logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .menu-icons {
+        flex: 0;
+        display: flex;
+        position: absolute;
+        right: 20px;
+        justify-content: flex-end; 
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+    .brand-logo{
+        padding-top: 10px;
+    }
+
+
+
+    .mobile-cta {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translate(-50%, -50%);
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        width: max-content; /* Ensures it doesn't stretch */
+    }
+    
+
+.header--scoial-icons a img {
+    width: 25px;
+    height: 25px;
+}
+
+    .nav-cta {
+        display: none; 
+    }
+}

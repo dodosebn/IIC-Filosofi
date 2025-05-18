@@ -1,0 +1,127 @@
+.gallery-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+    position: relative; 
+}
+
+.gallery-inner-section{
+    max-width: 930px;
+    padding: 15px;
+}
+.nayo-wallace-image-container{
+    display: flex;
+    gap: 20px;
+}
+.nayo-wallace-image-container .nayo-image-hidden{
+    display: none;
+}
+.nayo-bottom-images{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.nayo-bottom-images img:nth-child(1){
+    width: 31%;
+}
+.nayo-bottom-images img:nth-child(2){
+   width: 67%;
+}
+
+
+.nayo-news-image {
+margin-top: 22px;
+}
+
+.nayo-image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.nayo-image-gallery img{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 280px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.nayo-video-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media (max-width: 1179px) {
+    .gallery-section{
+       margin-top: -40px;
+    }
+
+}
+@media (max-width: 924px) {
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nayo-wallace-image-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .nayo-news-image {
+        margin-top: 20px;
+        
+    }
+    .nayo-news-image img{
+        height: 600px;
+        /* width: 380px; */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+ 
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .nayo-bottom-images{
+        flex-direction: column;
+    }
+    .nayo-bottom-images img:nth-child(1){
+        width: 100%;
+    }
+    .nayo-bottom-images img:nth-child(2){
+       width: 100%;
+    }
+    
+    .nayo-image-gallery img{
+        /* min-height: 200px; */
+        max-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+    .nayo-news-image img{
+        height: auto;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+}
+
+@media (max-width: 545px) {
+    .gallery-section{
+       margin-top: -60px;
+    }
+
+}

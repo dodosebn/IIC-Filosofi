@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Site Title-->
+    <title>filosofi | learn & thrive</title> 
+    <meta name="description" content="filosofi"> 
+    <!-- Bootstrap CSS file-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flickity CSS file-->
+    <link href="assets/css/flickity.min.css" rel="stylesheet">
+    <!-- Main CSS file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/home-header-section.css" rel="stylesheet">
+    <link href="assets/css/learn-and-thrive-section.css" rel="stylesheet">
+    <link href="assets/css/our-journey.css" rel="stylesheet">
+    <link href="assets/css/core-values.css" rel="stylesheet">
+    <link href="assets/css/gallery.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/pros-style.css" rel="stylesheet">
+    <!-- Fontawesome 5 CSS file-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Dosis|Oswald:300" rel="stylesheet">
+
+    <!-- Magnific Popup CSS-->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OPEN SANS, LATO & MONTSERRAT==== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+       <!-- Google Translate API -->
+
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    let googleSelect = document.querySelector(".goog-te-combo");
+
+    if (googleSelect) {
+        googleSelect.value = lang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+
+    // Update the displayed language in the dropdown
+    document.getElementById("selectedLang").innerText = lang.toUpperCase();
+
+    // Save selected language in local storage
+    localStorage.setItem("selectedLang", lang);
+}
+
+// Ensure language persists on page reload
+document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("selectedLang") || "en";
+    document.getElementById("selectedLang").innerText = savedLang.toUpperCase();
+
+    let googleSelect = document.querySelector(".goog-te-combo");
+    if (googleSelect) {
+        googleSelect.value = savedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+});
+
+   </script>
+
+  </head>
+<body>
+
+
+  <style>
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+          display: none !important;
+      }
+      body{
+          top: 0px !important;
+      }
+    @media (max-width: 768px) {
+      body{
+        overflow: hidden;
+      }
+    }
+  </style>
+
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+  
+
+  <!-- --scroll down---- -->
+
+  <button id="scroll-down-btn" class="scroll-btn left">
+      <i class="fas fa-arrow-down"></i>
+  </button>
+
+
+
+  
+  <div class="slider section" id="hero-section">
+    <div class="slide active" style="background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
+    <div class="overlay-nayo">
+
+        <div class="website-header "> 
+          <nav class="navigation-bar ">
+           
+              <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+             
+
+            <ul class="mobile-cta">
+         
+          </ul>
+
+          <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
+
+
+            <!-- Menu Icon -->
+            <div class="menu-icons" onclick="toggleMenu()">
+              <i class="fas fa-bars menu-icon"></i>
+              <i class="fas fa-times menu-icon"></i>
+            </div>
+                  
+             
+            <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
+              <ul class="navigation-bar-nav">
+                  <li class="navigation-item active lato-regular notranslate">
+                      <a class="navigation-link" href="/">Home</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="program.html">Program</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="industry.html">Industry</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                    <a class="navigation-link" href="pros.html">PROS</a>
+                  </li>
+                  <!-- <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="alumni.html">Alumni</a>
+                  </li> -->
+                  <!-- <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="corpers.html">CORPERS</a>
+                  </li> -->
+              </ul>
+          
+              <!-- Move CTA here -->
+              <ul class="nav-cta">
+            <li class="lato-regular notranslate register-now-btn text-black" ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
+
+               
+              </ul>
+          </div>
+          
+          </nav> 
+        </div>
+
+
+        <div class="text-center home-header-content">
+         
+          <div class="nayo-name">
+            <!-- <img src="assets/images/logo/logo-filosofi-blk.png" alt="logo"> -->
+             <h1 class="sans-serif-font font-bold text-white ">NAYO WALLACE</h1>
+             <p class="lead text-white lato-regular nayo-desc">ACTRESS | SINGER | ACTING COACH</p>
+             <!-- <button id="openOverlay" class="lato-regular">READ MORE</button> -->
+          </div>
+            
+        </div>
+    </div>
+</div>
+
+
+      <!-- LEARN AND THRIVE SECTION==================== -->
+
+
+      <div id='learn-and-thrive' class='learn-and-thrive-section bg-black-pearl '>
+   
+        <div class='learn-and-thrive-paragraph'>
+        <!-- <div class='learn-and-thrive-header'>
+          <h2 class="learn-and-thrive-title open-sans-bold">OUR FILOSOFI</h2>
+        </div> -->
+        <p class="lato-regular text-white">
+          Nayo Wallace is a serious actress with 30 years of experience in film, television, and theater. Her passion for acting 
+          outweighs her desire for fame. She comes from a highly motivated, creative family that has left an invaluable mark on 
+          the film industry. 
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her grandfather starred opposite the legendary Lena Horne as Chick Bailey in <b class="text-white">Stormy Weather</b> and appeared in 
+          Broadway's <b class="text-white">Guys and Dolls</b>. He also composed songs and enjoyed fame in Europe, performing out of Paris. Her 
+          grandmother, Vivian, began performing as a child with her younger sister and their childhood friend. They were 
+          known as the Dandridge Sisters. 
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her grandmother went on to perform as a singer worldwide and in film, television, radio, and voiceover work. Her 
+          dad appeared in <b class="text-white">Bright Road</b>, which starred Nayo’s great aunt, Dorothy Dandridge.
+        </p>
+        <p class="lato-regular text-white">
+          Dorothy Dandridge is the first African American woman nominated for an Oscar for Best Leading Actress in the 
+          critically acclaimed film Carmen Jones. She made several movies and paved the way for every woman of color in 
+          acting today. Nayo's great grandmother, Ruby Dandridge, was a regular on the Amos & Andy show, a recurring 
+          character on the Beulah Show, and a performer in numerous films.
+         
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her passion for acting was certainly handed down. Nayo has worked in TV, film, voice-over, and on the Broadway 
+          stage. She fell in love with Africa on her first visit. She decided to bring her love of acting, the knowledge 
+          accumulated over the years, and a profound understanding of Hollywood and the industry, building a career and 
+          avoiding pitfalls. She brings all that knowledge to Africa.  
+         
+          
+        </p>
+        <p class="lato-regular text-white">
+          Nayo was born and raised in Detroit, Michigan, and currently lives in Los Angeles.
+        </p>
+       
+       
+           
+        </div>
+       </div>
+
+       <div class="section video-one" id="pro-vdieo-section">
+        <!-- ==== Videos ==== -->
+        <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+          <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+        </div> -->
+        <div class="video-container">
+          <!-- <iframe 
+              src="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto" 
+              width="640" 
+              height="360" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen>
+          </iframe> -->
+          <iframe 
+            src="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto" 
+            width="640" 
+            height="360" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+
+      </div>
+     </div>
+
+     <div class="section video-two" id="pro-vdieo-section-two">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+        src="https://player.vimeo.com/video/1061530052?h=0ee38c8a6e&quality=auto" 
+        width="640" 
+        height="360" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      
+     </div>
+     
+    </div>
+    <div class="section video-three" id="pro-vdieo-section-three">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+            src="https://player.vimeo.com/video/1061530175?h=37dc101719&quality=auto" 
+            width="640" 
+            height="360" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+
+     </div>
+    </div>
+  
+    <div class="section video-four " id="pro-vdieo-section-four">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+          src="https://player.vimeo.com/video/1061534751?h=146278bcf6&quality=auto" 
+          width="640" 
+          height="360" 
+          frameborder="0" 
+          allow="autoplay; fullscreen; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+
+     </div>
+    </div>
+
+
+    <div class="gallery-section bg-white-smoke" id="gallery-section">
+      <!-- <h1 class="open-sans-bold">GALLERY</h1> -->
+ 
+  
+
+      <div class="gallery-inner-section">
+
+       <!-- ==== Images ==== -->
+       <div>
+        <!-- <h3 class="lato-bold">IMAGES</h3> -->
+        <div class="nayo-wallace-image-container">
+          <div class="nayo-image-gallery pt-4">
+            <img src="assets/images/trainers/nayo-slide-2.jpg" alt="nayo">
+            <img src="assets/images/trainers/IMG_2176.jpg" alt="nayo">
+            <img src="assets/images/trainers/nayo-team.png" alt="nayo">
+            <!-- <img src="assets/images/trainers/nayo-landscape-top.png" alt="nayo"> -->
+            <img src="assets/images/trainers/nayo-image-4.jpg" alt="nayo">
+        </div>
+        <div class="nayo-news-image">
+          <img src="assets/images/trainers/nayo-news.webp" alt="nayo">
+         
+
+        </div>
+     
+        </div>
+        <div class="nayo-bottom-images">
+          <img src="assets/images/trainers/nayo-image-1.jpg" alt="nayo">
+          <img src="assets/images/trainers/nayo-landscape.jpg" alt="nayo">
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+       <!-- OUR JOURNEY ======= -->
+
+       <!-- <div id='our-journey' class='journey-section '>
+   
+        <div class='journey-paragraph'>
+           <div class='journey-header'>
+               <h2 class="values-title open-sans-bold">JOURNEY</h2>
+           </div>
+        <p class="lato-regular  text-black">
+            <b>Are you ready?</b> <br>
+            Are you ready to build? Are you ready to focus on solutions rather 
+            than problems? Are you ready to do things differently from previous 
+            generations? Are you ready to sacrifice for a better future? Are you ready 
+            to face the challenges that lie ahead?
+           </p>
+           <p class="lato-regular  text-black">
+            We’ve been thinking about what’s next for us, our continent, our current place, 
+            and how the world sees Africa. It is said that the future belongs to those who prepare 
+            for it today. Young generation, are you ready for real change?
+           </p>
+           <p class="lato-regular  text-black">
+           <b>Big Think.</b> <br>
+            Think Big, think ahead, think global. Big achievements come from big ideas. Africa needs 
+            big, bold ideas and a generation that takes risks to manifest them into reality. This 
+            generation's values should encompass hard work, discipline, integrity, cohesion, and 
+            forward-thinking. 
+           </p>
+           <p class="lato-regular  text-black">
+            We must learn from our mistakes and adhere to the process. Great outcomes are only 
+            achieved through process. We must learn to collaborate and experiment to forge a path 
+            to a better future. 
+           </p>
+           <p class="lato-regular  text-black">
+            <b>A new mindset.</b> <br>
+            At Idea Is Capital, our values and vision distinguish us. Our promise is in our name, 
+            and our rejuvenation lies within us. Our shared history reflects both profound pain 
+            and remarkable revival. We can construct a glorious future that benefits us, our way.
+           </p>
+           <p class="lato-regular  text-black">
+            We are passionate about doing things right. We begin by acquiring the proper knowledge 
+            and cultivating and nurturing indigenous talents. We are determined to rewrite the African 
+            narrative and build it together.
+           </p>
+           <p class="lato-regular  text-black">
+            This journey epitomizes dignity.
+           </p>
+           
+        </div>
+       </div>
+  
+ -->
+
+
+ <div id="mediaModal" class="modal">
+  <div class="modal-content">
+    <div class="media-wrapper">
+      <span class="close" onclick="closeModal()">&times;</span> 
+      <img id="modalImg">
+      <iframe
+        id="vimeoVideo"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        style="height: 100%; width: 100%;">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+    <!-- Footer-->
+       <footer class="site-footer">
+      <div class="container footer-widgets align-items-center">
+            <div><a class="footer-brand" href="/"><img src="/assets/images/logo/logo-filosofi-wht.png" alt="logo" ></a></div>
+          
+          <div class="footer-menu mt-4">
+            <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+            <ul class="list-unstyled list-inlinetrue ">
+            <li class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal" ><a href="influencer.html" >INFLUENCER</a></li>
+            </ul>
+          </div>
+                   
+            <div class="mt-4 social-icons-mobile">
+            <ul class="list-unstyled list-inlinetrue social-icons">
+              <li class=""><a href="https://www.facebook.com/ideaiscapital" target="_blank"><i class="fab fa-facebook-square icon"></i></a></li>
+              <li class=""><a href="https://www.instagram.com/ideaiscapital/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+              <li class=""><a href="https://www.tiktok.com/@ideaiscapital" target="_blank"><i class="fab fa-tiktok icon"></i></a></li>
+             
+              <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
+              <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+<!-- 
+              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>
+              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li> -->
+            </ul>
+          </div>
+      </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="footer-widget  text-center"> 
+              <p class="m-md-0 lato-regular">© 2025 An <a href="https://ideaiscapital.africa" class="idea-text notranslate">Idea is Capital </a>Company • All Rights Reserved</p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+
+
+
+  <!-- ---scroll up---- -->
+  <button id="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+  
+    <!-- End Footer-->
+    <!-- javascript files-->
+    <!-- jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- lozad js-->
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos js-->
+    <script src="assets/js/aos.js"></script>
+    <!-- Slick flickity js-->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Magnific popup js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Countdown js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!-- CountTo js-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!-- Masonry js-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <!-- Global - Main js-->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   
+
+    <!-- HEADER SLIDER===== -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const slides = document.querySelectorAll(".slide");
+          let currentIndex = 0;
+          let interval;
+
+          function nextSlide() {
+              slides[currentIndex].classList.remove("active");
+              currentIndex = (currentIndex + 1) % slides.length;
+              slides[currentIndex].classList.add("active");
+          }
+
+          function startAutoSlide() {
+              interval = setInterval(nextSlide, 3000);
+          }
+
+          startAutoSlide();
+      });
+
+    </script>
+
+
+<!-- SCROLL TO THE TOP========== -->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("scroll-to-top");
+
+    const sections = [
+        document.getElementById("hero-section"),
+        document.getElementById("learn-and-thrive"),
+        document.getElementById("pro-vdieo-section"),
+        document.getElementById("pro-vdieo-section-two"),
+        document.getElementById("pro-vdieo-section-three"),
+        document.getElementById("pro-vdieo-section-four"),
+        document.getElementById("gallery-section")
+    ].filter(Boolean); 
+
+    function getCurrentSectionIndex() {
+        let currentIndex = 0;
+        let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        for (let i = 0; i < sections.length; i++) {
+            let sectionTop = sections[i].offsetTop;
+            let sectionBottom = sectionTop + sections[i].offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentIndex = i;
+                break;
+            }
+        }
+        return currentIndex;
+    }
+
+    function handleScroll() {
+        let index = getCurrentSectionIndex();
+        if (index > 0) {
+            scrollTopBtn.classList.add("show");
+            scrollTopBtn.dataset.index = index;
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
+    }
+
+    scrollTopBtn.addEventListener("click", function () {
+        let index = parseInt(scrollTopBtn.dataset.index);
+        if (index > 0) {
+            sections[index - 1].scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+</script>
+
+
+<!-- ===SCROLL DOWN=== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollDownBtn = document.getElementById("scroll-down-btn");
+    const sections = [
+    document.getElementById("hero-section"),
+        document.getElementById("learn-and-thrive"),
+        document.getElementById("pro-vdieo-section"),
+        document.getElementById("pro-vdieo-section-two"),
+        document.getElementById("pro-vdieo-section-three"),
+        document.getElementById("pro-vdieo-section-four"),
+        document.getElementById("gallery-section")
+    ].filter(Boolean); // Remove null values if a section doesn't exist
+
+    function getCurrentSectionIndex() {
+        let currentIndex = 0;
+        let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        for (let i = 0; i < sections.length; i++) {
+            let sectionTop = sections[i].offsetTop;
+            let sectionBottom = sectionTop + sections[i].offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentIndex = i;
+                break;
+            }
+        }
+        return currentIndex;
+    }
+
+    function handleScroll() {
+        let index = getCurrentSectionIndex();
+        
+        // Hide scroll-down button if at the last section
+        if (index >= sections.length - 1) {
+            scrollDownBtn.classList.add("hide");
+        } else {
+            scrollDownBtn.classList.remove("hide");
+        }
+    }
+
+    scrollDownBtn.addEventListener("click", function () {
+        let index = getCurrentSectionIndex();
+        if (index < sections.length - 1) {
+            sections[index + 1].scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+</script>
+
+
+
+<!-- MEDIA MODAL=================== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("mediaModal");
+    var modalImg = document.getElementById("modalImg");
+    var videoFrame = document.getElementById("vimeoVideo");
+    var closeBtn = document.querySelector(".close");
+
+    // Open image in modal
+    document.querySelectorAll(".nayo-wallace-image-container img, .nayo-bottom-images img").forEach(function (img) {
+        img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.style.display = "block";
+            videoFrame.style.display = "none";
+            modalImg.src = this.src;
+        });
+    });
+
+    // Replace videos with a cover image and open video in modal on click
+    document.querySelectorAll(".video-container").forEach(function (videoContainer) {
+        var vimeoUrl = videoContainer.getAttribute("data-vimeo");
+        var existingImg = videoContainer.querySelector("img");
+
+        if (existingImg) {
+            // Create cover image using the existing image
+            var coverImg = document.createElement("img");
+            coverImg.src = existingImg.src; // Use the individual image source
+            coverImg.alt = existingImg.alt;
+            coverImg.style.cursor = "pointer";
+            coverImg.classList.add("video-cover");
+
+            // Replace iframe with cover image
+            videoContainer.innerHTML = "";
+            videoContainer.appendChild(coverImg);
+
+            // Open modal and load video on click
+            coverImg.addEventListener("click", function () {
+                modal.style.display = "flex";
+                modalImg.style.display = "none";
+
+                // Create a new iframe to reset video playback
+                var newIframe = document.createElement("iframe");
+                newIframe.id = "vimeoVideo";
+                newIframe.src = vimeoUrl + "&autoplay=1";
+                newIframe.setAttribute("frameborder", "0");
+                newIframe.setAttribute("allow", "autoplay; fullscreen");
+                newIframe.setAttribute("allowfullscreen", "");
+                newIframe.style.width = "100%";
+                newIframe.style.height = "100%";
+
+                // Replace the old iframe with the new one
+                videoFrame.replaceWith(newIframe);
+                videoFrame = newIframe;
+            });
+        }
+    });
+
+    // Close modal
+    function closeModal() {
+        modal.style.display = "none";
+        modalImg.style.display = "none";
+        videoFrame.style.display = "none";
+        videoFrame.src = ""; 
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+  });
+</script>
+  
+
+
+</body>
+</html>
