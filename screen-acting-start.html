@@ -106,105 +106,51 @@ document.addEventListener("DOMContentLoaded", function () {
   </head>
   <body>
 
-  <style>
-    .VIpgJd-ZVi9od-ORHb-OEVmcd {
-          display: none !important;
-      }
-      body{
-          top: 0px !important;
-      }
-      .discount-price{
-        display: flex;
-        flex-direction: column;
-      }
-  </style>
-
-
   <!-- Google Translate Widget -->
   <div id="google_translate_element" style="display: none;"></div>
-
-
-
-
-    <!-- Navbar-->
-    <div class="website-header header-color-bg">
-      <nav class="navigation-bar ">
-       
-        <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+  <div class="website-header header-color-bg
+"> 
+              <nav class="navigation-bar ">
+               
+                  <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
                  
 
-        <ul class="mobile-cta">
-          <!--<li class="translation-contain">-->
-          <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
-          <!--    <span style="font-weight: 700; color: #fff; ">|</span>-->
-          <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
-          <!--</li>-->
-  
-          <!-- Social nav --> 
-          <!-- <div class="header--scoial-icons">
-              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
-              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
-          </div> -->
-      </ul>
+                <ul class="mobile-cta"></ul>
 
-      <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
+              <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
 
 
-        <!-- Menu Icon -->
-        <div class="menu-icons" onclick="toggleMenu()">
-          <i class="fas fa-bars menu-icon"></i>
-          <i class="fas fa-times menu-icon"></i>
-        </div>
+                <!-- Menu Icon -->
+                <div class="menu-icons" onclick="toggleMenu()">
+                  <i class="fas fa-bars menu-icon"></i>
+                  <i class="fas fa-times menu-icon"></i>
+                </div>
+                      
+                 
+                <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
+                  <ul class="navigation-bar-nav">
+                      <li class="navigation-item active lato-regular notranslate">
+                          <a class="navigation-link" href="/">Home</a>
+                      </li>
+                      <li class="navigation-item lato-regular notranslate">
+                          <a class="navigation-link" href="program.html">Program</a>
+                      </li>
+                      <li class="navigation-item lato-regular notranslate">
+                          <a class="navigation-link" href="industry.html">Industry</a>
+                      </li>
+                      <li class="navigation-item lato-regular notranslate">
+                          <a class="navigation-link" href="pros.html">PROS</a>
+                      </li>
+                       
+                  <li class="reg-btn navigation-item lato-regular notranslate" >
+                    <a class="navigation-link" href="screen-acting-start.html" >REGISTER NOW</a></li>
+
+                      <li class="translation-contain"></li>
+                  </ul>
+              </div>
               
-         
-        <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
-          <ul class="navigation-bar-nav">
-              <li class="navigation-item active lato-regular notranslate">
-                  <a class="navigation-link" href="/">Home</a>
-              </li>
-              <li class="navigation-item lato-regular notranslate">
-                  <a class="navigation-link" href="program.html">Program</a>
-              </li>
-              <li class="navigation-item lato-regular notranslate">
-                  <a class="navigation-link" href="industry.html">Industry</a>
-              </li>
-              <li class="navigation-item lato-regular notranslate">
-                <a class="navigation-link" href="pros.html">PROS</a>
-              </li>
-              <!--<li class="navigation-item lato-regular notranslate">-->
-              <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
-              <!--</li>        -->
-              
-              <!-- <li class="navigation-item lato-regular notranslate">
-
-                <a class="navigation-link" href="corpers.html">CORPERS</a>
-
-            </li> -->
-          </ul>
-      
-          <!-- Move CTA here -->
-          <ul class="nav-cta">
-            <li class="lato-regular notranslate register-now-btn text-black" ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
-
-              <!--<li class="translation-contain">-->
-              <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
-              <!--    <span style="font-weight: 700; color: #fff; ">|</span>-->
-              <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
-              <!--</li>-->
-      
-              <!-- Social nav -->
-              <!-- <div class="header--scoial-icons">
-                  <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
-                  <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
-              </div> -->
-          </ul>
-      </div>
-      
-      </nav> 
-    </div>
-
-
-
+              </nav> 
+            </div>
     <!-- End Navbar-->
     <article class="entry">
       <div class="entry-content">
@@ -309,122 +255,43 @@ document.addEventListener("DOMContentLoaded", function () {
              
 
               <div class="price-table-container">
-                <!-- <div class="col-lg-4 col-md-7">
-                  <div class="pricing-table-item bg-school-yellow px-5">
-                    <h4 class="pricing-table__title open-sans-bold">Screen Acting START</h4>
-                    <div class="pricing-table__price lato-bold "><span class="text-black"  style="font-size: 40px;">₦</span>
-                      <h5 class="pricing-table__amount lato-bold notranslate text-black"  > 599,000</h5>
-                    </div>
-                    <div class="pricing-table__price lato-bold discount-price pt-2 " style="margin-top: -30px;">
-                     <div class="row">
-                      <span class="pricing-table__currency" style="font-size: 30px; margin-bottom: 0;">₦</span>
-                      <h1 class="lato-bold notranslate " style="font-size: 35px; color: #6b6b6b; margin-left: -30px;">499,000</h1>
-                     </div>
-                      <div style="margin-top: -15px;">
-                        <span class="lato-bold" style="font-size: 20px; color: #6b6b6b; ">(Earlybird price - by 31/03/25)</span>
-                      </div>
-                    </div>
-                    <ul class="pricing-table__features">
-                      <li><i class="fas fa-check mr-2 mr-2 lato-regular"></i>Duration: 3 Months </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class sessions: 3 or 5 hours </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class frequency: 1 or 2 weekly</li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class size: 12 people</li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Age: 16 & up </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Payment plans: 60 / 40</li>
-                    </ul>
-                  </div>
-                </div> -->
-
-
-
-                <!-- <div class="discount-pricing-table">
-                  <div class="discount-pricing-table-header">
-                    <span class="lato-bold">Screen Acting</span>
-                    <span class="lato-bold">START</span>
-                  </div>
-                  <div class="inner-discount-price">
-                    <h3 class="lato-bold">N 599,000</h3>
-                    <ul class="inner-price-features">
-                      <li><i class="fas fa-check mr-2 mr-2 lato-regular"></i>Duration: 3 Months </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class sessions: 3 or 5 hours </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class frequency: 1 or 2 weekly</li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Class size: 12 people</li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Age: 16 & up </li>
-                      <li><i class="fas fa-check mr-2 mr-2  lato-regular"></i>Payment plans: 60 / 40</li>
-                    </ul>
-                  </div>
-                  <div class="discount-footer-banner">
-                    <div class="dsicount-banner-left">
-                      <h3 class="lato-bold">REGISTER</h3>
-                      <p class="now lato-bold">NOW</p>
-                      <span></span>
-                      <p class="limit lato-bold">LIMITED SPACE</p>
-                    </div>
-                    <div class="discount-banner-right">
-                      <p class="early-bird-text lato-regular">EARLY BIRD DISCOUNT</p>
-                      <h3 class="lato-bold">N 499,000</h3>
-                      <p class="early-bird-text lato-regular">BY 31/03/25</p>
-                    </div>
-                  </div>
-                </div> -->
-
-              </div>
-              
-            </div>
-            </div>
-          </div>
-
-         
-        <!-- <div class="container mt-lg-5 mb-lg-5 my-md-7 my-6">
-          <div class="row">
-            <div class="col-lg-8 offset-2 text-center"></div>
-            <div class="col-sm-8 offset-sm-2 text-center">
-             
-              <div ><a class="btn btn-black-pearl lato-bold notranslate" href="form.html">REGISTER NOW</a></div>
-            </div>
-          </div>
-        </div> -->
-
-
-    
-           <!-- ============FORM ===== -->
-          <div class="modern-form-container">
-            <div class="form-card ">
-                  <!-- Form Header -->
-              <div class="form-header">
-               <h2 class="open-title">Register Now</h2>
-                     <div class="form-subtitle">Begin your journey in screen acting</div>
-              </div>
-              <!-- Animated Progress Bar -->
+     
+<!-- ============FORM ===== -->
+<div class="modern-form-container">
+  <div class="form-card">
+    <!-- Form Header -->
+    <div class="form-header">
+      <h2 class="open-title">Register Now</h2>
+      <div class="form-subtitle">Begin your journey in screen acting</div>
+    </div>
+    <!-- Animated Progress Bar -->
     <div class="form-progress">
       <div class="progress-bar"></div>
     </div>
-               <form id="enrollment-form" action="assets/php/registration.php" method="post" class="enrollment-form">
-                 <div class="form-step active" data-step="1">
-
-                 <div class="form-grid">
+    <form id="enrollment-form" action="assets/php/registration.php" method="post" class="enrollment-form">
+      <div class="form-step active">
+        <!-- Personal Information - Two fields per row -->
+        <div class="form-grid">
           <div class="input-group">
             <div class="input-field floating">
-                  <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name">
               <label for="name">First Name</label>
               <i class="fas fa-user input-icon"></i>
               <div class="underline"></div>
             </div>
           </div>
-           
-                   <div class="input-group">
+          
+          <div class="input-group">
             <div class="input-field floating">
-                    <input type="text" id="surname" name="surname" required>
+              <input type="text" id="surname" name="surname" required>
               <label for="surname">Last Name</label>
-                          <i class="fas fa-user input-icon"></i>
+              <i class="fas fa-user input-icon"></i>
               <div class="underline"></div>
-                     </div>
-                   </div>
-                 </div>
-           
-                 
+            </div>
+          </div>
+        </div>
 
- <div class="form-grid" data-step="2">
+        <div class="form-grid">
           <div class="input-group">
             <div class="input-field floating">
               <select id="gender" name="gender" required>
@@ -454,13 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
 
-        <div class="form-navigation">
-          <button type="button" class="next-btn">Continue <i class="fas fa-arrow-right"></i></button>
-        </div>
-      </div>
-
-      <!-- Contact Information -->
-      <div class="form-step" data-step="3">
+        <!-- Contact Information - Two fields per row -->
         <div class="form-grid">
           <div class="input-group">
             <div class="input-field floating">
@@ -481,47 +342,42 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
 
-        <div class="input-group full-width">
-          <div class="input-field floating">
-            <input type="text" id="city" name="city" required>
-            <label for="city">City</label>
-            <i class="fas fa-location-dot input-icon"></i>
-            <div class="underline"></div>
-          </div>
-        </div>
+<!-- Program Information - Two fields per row -->
+<div class="form-grid">
+  <div class="input-group"> <!-- Removed full-width class -->
+    <div class="input-field floating">
+      <input type="text" id="city" name="city" required>
+      <label for="city">City</label>
+      <i class="fas fa-location-dot input-icon"></i>
+      <div class="underline"></div>
+    </div>
+  </div>
+  
+  <div class="input-group">
+    <div class="input-field floating select-field">
+      <select id="program" name="program" required>
+        <option value=""></option>
+        <option value="screen-acting-start">Screen Acting START</option>
+        <option value="screen-acting-start-early">Screen Acting START (EARLY BIRD)</option>
+        <option value="screen-acting-total">Screen Acting TOTAL</option>
+        <option value="screen-acting-total-early">Screen Acting TOTAL (EARLY BIRD)</option>
+        <option value="screen-acting-youth">Screen Acting YOUTH</option>
+        <option value="screen-acting-youth-early">Screen Acting YOUTH (EARLY BIRD)</option>
+        <option value="screen-acting-pro">Screen Acting PRO</option>
+        <option value="screen-acting-pro-kids">Screen Acting PRO-KIDS</option>
+        <option value="screen-acting-one">Screen Acting ONE</option>
+        <option value="screen-acting-one-kids">Screen Acting ONE-KIDS</option>
+        <option value="screenwriting-start">Screenwriting START</option>
+        <option value="screenwriting-start-early">Screenwriting START (EARLY BIRD)</option>
+      </select>
+      <label for="program">Program</label>
+      <i class="fas fa-graduation-cap input-icon"></i>
+      <div class="underline"></div>
+    </div>
+  </div>
+</div>
 
-        <div class="form-navigation">
-          <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
-          <button type="button" class="next-btn">Continue <i class="fas fa-arrow-right"></i></button>
-        </div>
-      </div>
-
-      <!-- Program Selection -->
-      <div class="form-step" data-step="4">
         <div class="form-grid">
-          <div class="input-group">
-            <div class="input-field floating select-field">
-              <select id="program" name="program" required>
-                <option value=""></option>
-                <option value="screen-acting-start">Screen Acting START</option>
-                <option value="screen-acting-start-early">Screen Acting START (EARLY BIRD)</option>
-                <option value="screen-acting-total">Screen Acting TOTAL</option>
-                <option value="screen-acting-total-early">Screen Acting TOTAL (EARLY BIRD)</option>
-                <option value="screen-acting-youth">Screen Acting YOUTH</option>
-                <option value="screen-acting-youth-early">Screen Acting YOUTH (EARLY BIRD)</option>
-                <option value="screen-acting-pro">Screen Acting PRO</option>
-                <option value="screen-acting-pro-kids">Screen Acting PRO-KIDS</option>
-                <option value="screen-acting-one">Screen Acting ONE</option>
-                <option value="screen-acting-one-kids">Screen Acting ONE-KIDS</option>
-                <option value="screenwriting-start">Screenwriting START</option>
-                <option value="screenwriting-start-early">Screenwriting START (EARLY BIRD)</option>
-              </select>
-              <label for="program">Program</label>
-              <i class="fas fa-graduation-cap input-icon"></i>
-              <div class="underline"></div>
-            </div>
-          </div>
-
           <div class="input-group">
             <div class="input-field floating">
               <input type="text" id="price" name="price" readonly required>
@@ -530,17 +386,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="underline"></div>
             </div>
           </div>
-        </div>
-
-        <div class="form-navigation">
-          <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
-          <button type="button" class="next-btn">Continue <i class="fas fa-arrow-right"></i></button>
-        </div>
-      </div>
-
-      <!-- Preferences -->
-      <div class="form-step" data-step="5">
-        <div class="form-grid">
+          
           <div class="input-group">
             <div class="input-field floating select-field">
               <select id="time" name="time" required>
@@ -554,7 +400,9 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="underline"></div>
             </div>
           </div>
+        </div>
 
+        <div class="form-grid">
           <div class="input-group">
             <div class="input-field floating select-field">
               <select id="experience" name="experience" required>
@@ -567,30 +415,30 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="underline"></div>
             </div>
           </div>
-        </div>
-
-        <div class="input-group full-width">
-          <div class="input-field floating select-field">
-            <select id="payment" name="payment" required>
-              <option value=""></option>
-              <option value="Bank Transfer">Bank Transfer</option>
-              <option value="Payment Link">Paystack Payment Link</option>
-            </select>
-            <label for="payment">Payment Method</label>
-            <i class="fas fa-credit-card input-icon"></i>
-            <div class="underline"></div>
+          
+          <div class="input-group">
+            <div class="input-field floating select-field">
+              <select id="payment" name="payment" required>
+                <option value=""></option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Payment Link">Paystack Payment Link</option>
+              </select>
+              <label for="payment">Payment Method</label>
+              <i class="fas fa-credit-card input-icon"></i>
+              <div class="underline"></div>
+            </div>
           </div>
         </div>
-<div id="loading" style="display: none;">Submitting...</div>
-                   <div id="message"></div>
+
+        <div id="loading" style="display: none;">Submitting...</div>
+        <div id="message"></div>
         <div class="form-navigation">
-          <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
           <button type="submit" class="submit-btn" id="submit-btn">Complete Registration</button>
         </div>
       </div>
     </form>
-           </div>
-          </div>
+  </div>
+</div>
 
 
       </div>
@@ -681,7 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
      
     
       <script>
-      $(document).ready(function () {
+         $(document).ready(function () {
         $("#enrollment-form").submit(function (event) {
           event.preventDefault(); 
     
