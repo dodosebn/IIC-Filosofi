@@ -14,14 +14,14 @@
     <!-- Flickity CSS file-->
     <link href="assets/css/flickity.min.css" rel="stylesheet">
     <!-- Main CSS file-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/home-header-section.css" rel="stylesheet">
+    <link href="assets/css/props/style.css" rel="stylesheet">
+    <link href="assets/css/props/home-header-section.css" rel="stylesheet">
     <link href="assets/css/learn-and-thrive-section.css" rel="stylesheet">
-    <link href="assets/css/our-journey.css" rel="stylesheet">
+    <link href="assets/css/props/our-journey.css" rel="stylesheet">
     <link href="assets/css/core-values.css" rel="stylesheet">
-    <link href="assets/css/gallery.css" rel="stylesheet">
-    <link href="assets/css/header.css" rel="stylesheet">
-    <link href="assets/css/pros-style.css" rel="stylesheet">
+    <link href="assets/css/props/home-header-section.css" rel="stylesheet">
+    <link href="assets/css/props/header.css" rel="stylesheet">
+    <link href="assets/css/props/pros-style.css" rel="stylesheet">
     <!-- Fontawesome 5 CSS file-->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -84,6 +84,133 @@ document.addEventListener("DOMContentLoaded", function () {
       body{
           top: 0px !important;
       }
+      .gallery-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+    position: relative; 
+}
+
+.gallery-inner-section{
+    max-width: 930px;
+    padding: 15px;
+}
+.nayo-wallace-image-container{
+    display: flex;
+    gap: 20px;
+}
+.nayo-wallace-image-container .nayo-image-hidden{
+    display: none;
+}
+.nayo-bottom-images{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.nayo-bottom-images img:nth-child(1){
+    width: 31%;
+}
+.nayo-bottom-images img:nth-child(2){
+   width: 67%;
+}
+
+
+.nayo-news-image {
+margin-top: 22px;
+}
+
+.nayo-image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.nayo-image-gallery img{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 280px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.nayo-video-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media (max-width: 1179px) {
+    .gallery-section{
+       margin-top: -40px;
+    }
+
+}
+@media (max-width: 924px) {
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nayo-wallace-image-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .nayo-news-image {
+        margin-top: 20px;
+        
+    }
+    .nayo-news-image img{
+        height: 600px;
+        /* width: 380px; */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+ 
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .nayo-bottom-images{
+        flex-direction: column;
+    }
+    .nayo-bottom-images img:nth-child(1){
+        width: 100%;
+    }
+    .nayo-bottom-images img:nth-child(2){
+       width: 100%;
+    }
+    
+    .nayo-image-gallery img{
+        /* min-height: 200px; */
+        max-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+    .nayo-news-image img{
+        height: auto;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+}
+
+@media (max-width: 545px) {
+    .gallery-section{
+       margin-top: -60px;
+    }
+
+}
     @media (max-width: 768px) {
       body{
         overflow: hidden;
@@ -129,33 +256,38 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
                   
              
-    <!-- Navbar-->
+            <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
+              <ul class="navigation-bar-nav">
+                  <li class="navigation-item active lato-regular notranslate">
+                      <a class="navigation-link" href="/">Home</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="program.html">Program</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="industry.html">Industry</a>
+                  </li>
+                  <li class="navigation-item lato-regular notranslate">
+                    <a class="navigation-link" href="pros.html">PROS</a>
+                  </li>
+                  <!-- <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="alumni.html">Alumni</a>
+                  </li> -->
+                  <!-- <li class="navigation-item lato-regular notranslate">
+                      <a class="navigation-link" href="corpers.html">CORPERS</a>
+                  </li> -->
+              </ul>
+          
+              <!-- Move CTA here -->
+              <ul class="nav-cta">
+            <li class="lato-regular notranslate register-now-btn text-black" ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
 
-                <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
-                  <ul class="navigation-bar-nav">
-                      <li class="navigation-item active lato-regular notranslate">
-                          <a class="navigation-link" href="/">Home</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="program.html">Program</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="about.html">About Us</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link"  href="pros.html">PROS</a>
-                      </li>
-                       
-                  <li class="reg-btn navigation-item lato-regular notranslate" >
-                    <a class="navigation-link" href="screen-acting-start.html" >REGISTER NOW</a></li>
-
-                      <li class="translation-contain"></li>
-                  </ul>
-              </div>
-              
-              </nav> 
-            </div>
-    <!-- End Navbar-->
+               
+              </ul>
+          </div>
+          
+          </nav> 
+        </div>
 
 
         <div class="text-center home-header-content">
@@ -342,57 +474,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-       <!-- OUR JOURNEY ======= -->
-
-       <!-- <div id='our-journey' class='journey-section '>
-   
-        <div class='journey-paragraph'>
-           <div class='journey-header'>
-               <h2 class="values-title open-sans-bold">JOURNEY</h2>
-           </div>
-        <p class="lato-regular  text-black">
-            <b>Are you ready?</b> <br>
-            Are you ready to build? Are you ready to focus on solutions rather 
-            than problems? Are you ready to do things differently from previous 
-            generations? Are you ready to sacrifice for a better future? Are you ready 
-            to face the challenges that lie ahead?
-           </p>
-           <p class="lato-regular  text-black">
-            We’ve been thinking about what’s next for us, our continent, our current place, 
-            and how the world sees Africa. It is said that the future belongs to those who prepare 
-            for it today. Young generation, are you ready for real change?
-           </p>
-           <p class="lato-regular  text-black">
-           <b>Big Think.</b> <br>
-            Think Big, think ahead, think global. Big achievements come from big ideas. Africa needs 
-            big, bold ideas and a generation that takes risks to manifest them into reality. This 
-            generation's values should encompass hard work, discipline, integrity, cohesion, and 
-            forward-thinking. 
-           </p>
-           <p class="lato-regular  text-black">
-            We must learn from our mistakes and adhere to the process. Great outcomes are only 
-            achieved through process. We must learn to collaborate and experiment to forge a path 
-            to a better future. 
-           </p>
-           <p class="lato-regular  text-black">
-            <b>A new mindset.</b> <br>
-            At Idea Is Capital, our values and vision distinguish us. Our promise is in our name, 
-            and our rejuvenation lies within us. Our shared history reflects both profound pain 
-            and remarkable revival. We can construct a glorious future that benefits us, our way.
-           </p>
-           <p class="lato-regular  text-black">
-            We are passionate about doing things right. We begin by acquiring the proper knowledge 
-            and cultivating and nurturing indigenous talents. We are determined to rewrite the African 
-            narrative and build it together.
-           </p>
-           <p class="lato-regular  text-black">
-            This journey epitomizes dignity.
-           </p>
-           
-        </div>
-       </div>
-  
- -->
 
 
  <div id="mediaModal" class="modal">
@@ -424,7 +505,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul class="list-unstyled list-inlinetrue footer-menu-links">
               <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
               <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
-              <li class="mr-4 lato-regular notranslate"><a href="industry.html">INDUSTRY</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
               <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
             </ul>
             <ul class="list-unstyled list-inlinetrue ">
@@ -706,7 +787,139 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 </script>
+  <style>
+    /* .learn-and-thrive-section{
+    background-color: #ffffff; 
+    min-height: 100vh ;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding-bottom: 30px;
+ }
+  */
+
+  .learn-and-thrive-section {
+    /* background: url('/assets//images//home/2ND-COLUMN-BG.jpg') no-repeat center center/cover;  */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+    position: relative; 
+}
+
+/* White overlay */
+.learn-and-thrive-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0.8);  */
+    z-index: 1; 
+}
+
+
+ .learn-and-thrive-paragraph{
+     /* margin-left: 300px;
+     margin-right: 300px; */
+     position: relative;
+     z-index: 2;
+     max-width: 1000px; 
+     padding: 15px;
+     /* padding-bottom: 100px; */
+ }
+ .learn-and-thrive-paragraph p{
+     text-align: justify;
+     font-size: 21px;
+ }
+ 
+ .journey-header{
+     margin-bottom: 30px;
+ }
+ .journey-header h2{
+     font-size: 34px;
+ }
+ 
+ 
+ .explore-button {
+     padding: 12px 20px;
+     background: #070707;
+     color: #fff;
+     font-weight: bold;
+     position: absolute;
+     left: 40px;
+     bottom: 50px; 
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s ease;
+     /* margin-top: 20px; */
+   } 
+   
+   .explore-button:hover {
+     background: #141414;
+   }
+
+
+
+
+   .learn-and-thrive-header  .learn-and-thrive-title{
+    align-items: left;
+    text-align: left;
+    padding-bottom: 30px;
+   }
   
+ 
+   
+   
+ 
+ 
+ 
+ 
+   @media (max-width: 1180px) {
+     .learn-and-thrive{
+         max-width: 800px; 
+         padding: 15px;
+     }
+     .learn-and-thrive-section{
+      min-height: auto;
+      margin-bottom: 40px;
+   }
+   .explore-button {
+    /* left: 15px; */
+    bottom: 0; 
+  } 
+   }
+ 
+   @media (max-width: 768px) {
+     .journey-header h2{
+         font-size: 27px;
+     }
+     .learn-and-thrive-section{
+        min-height: 80vh;
+        margin-bottom: 40px;
+     }
+     .learn-and-thrive-paragraph p{
+         font-size: 17px;
+     }
+     .explore-button {
+      left: 15px;
+    } 
+   }
+
+   @media (max-width: 530px) {
+     .learn-and-thrive-section{
+         height: auto;
+         margin-bottom: 30px;
+      }
+
+      
+   }
+  </style>
 
 
 </body>

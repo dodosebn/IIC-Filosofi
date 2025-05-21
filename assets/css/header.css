@@ -88,22 +88,9 @@ background-color: #000000;
     display: inline-block;
 }
 
-/* .navigation-item .navigation-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #4facfe 50%, rgba(255,255,255,0) 100%);
-    transition: all 0.4s ease;
-    transform: translateX(-50%);
-    opacity: 0;
-} */
-
 .navigation-item:hover .navigation-link {
-    /* color: #4facfe; */
-    text-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+    color: #4facfe;
+    /* text-shadow: 0 0 10px rgba(79, 172, 254, 0.5); */
 }
 
 .navigation-item:hover .navigation-link::after {
@@ -132,13 +119,7 @@ background-color: #000000;
         text-align: center; 
         display: block !important;
         padding: 3px 9px; 
-    }.navigation-item:hover {
-    animation: pulse 1s ease;
-    border-bottom: 2px solid #4facfe;
-    border-radius: 2px;
-    background: rgba(79, 172, 254, 0.1);
-    backdrop-filter: blur(2px);
-}
+     } 
 
 .header-color-bg {
     background: #000000;
@@ -335,9 +316,29 @@ background-color: #000000;
         flex-direction: column;
         gap: 10px;
     }
-
-    .navigation-item .navigation-link {
-        padding: 12px 20px;
-        font-size: 16px;
+@media (max-width: 1024px) {
+    /* Add this to show the register button in mobile menu */
+    .nav-cta {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 200px;
+        margin-left: 50px;
     }
+    
+    .register-now-btn {
+        display: block !important;
+        margin: 10px 0 !important;
+        width: 80% !important;
+        text-align: center;
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+    }
+    
+    .nav-cta {
+        display: none;
+    }
+}
 }

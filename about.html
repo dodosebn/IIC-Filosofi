@@ -147,7 +147,7 @@
           <div class="container">
             <div class="philosophy-grid">
               <div class="philosophy-text">
-                <h2>Our Philosophy</h2>
+                <h2 class="section-title">About Our Filosofi</h2>
                 <p>
                   <!-- Filosofi embodies the pursuit of wisdom and knowledge,
                   principles that shape our vision for the future of African
@@ -185,7 +185,7 @@ Our team includes enthusiastic younger members who share the company's vision of
             <div class="title-decoration"></div>
         </div>
 
-        <div class="values-grid">
+        <div class="bigger-card-grid">
             <!-- Value Card 1 -->
             <div class="value-card dark-card" data-aos="fade-up">
                 <div class="card-header">
@@ -194,10 +194,7 @@ Our team includes enthusiastic younger members who share the company's vision of
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Why it matters: The fundamentals are the building blocks. Without a solid grasp of the basics, 
-                        concepts can become confusing and overwhelming, making performance feel superficial. Think of 
-                        it like building a house—without a strong foundation, it is at risk. Therefore, investing time 
-                        in thoroughly understanding the core principles of any topic is essential.
+                        Why it matters: The fundamentals are the building blocks. Without a solid grasp of the basics, concepts can become confusing and overwhelming, making performance feel superficial. Think of it like building a house—without a strong foundation, it is at risk. Therefore, investing time in thoroughly understanding the core principles of any topic is essential. Mastering the fundamentals empowers you to adapt knowledge and facilitates your personal development.
                     </p>
                 </div>
                 <div class="card-icon">01</div>
@@ -211,10 +208,7 @@ Our team includes enthusiastic younger members who share the company's vision of
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Aspirations without hard work are like tools you never use—they rust and become useless. 
-                        Applying knowledge bridges the gap between theory and practice, wishful thinking and action. 
-                        Experiment with your choices, embrace the discomfort of failure, and refine your instincts 
-                        through practice.
+                       Aspirations without hard work are like tools you never use—they rust and become useless. Applying knowledge bridges the gap between theory and practice, wishful thinking and action. Experiment with your choices, embrace the discomfort of failure, and refine your instincts through practice. The more you engage and create, the better you understand how to translate aspiration into authentic, compelling results. The act of doing solidifies your understanding and builds confidence.
                     </p>
                 </div>
                 <div class="card-icon">02</div>
@@ -228,10 +222,7 @@ Our team includes enthusiastic younger members who share the company's vision of
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Learning extends beyond simply absorbing information. Questioning enables you to evaluate 
-                        ideas and connect concepts. It transforms you from a passive consumer of knowledge into an 
-                        engaged, discerning thinker. Challenge assumptions, ask "why" and "how," and seek out multiple 
-                        perspectives.
+                        Learning extends beyond simply absorbing information. Questioning enables you to evaluate ideas and connect concepts. It transforms you from a passive consumer of knowledge into an engaged, discerning thinker. Challenge assumptions, ask "why" and "how," and seek out multiple perspectives. Analyze and practice breaking down complexities into manageable steps. This sharpens your ability to think creatively and helps you reach new heights without holding back.
                     </p>
                 </div>
                 <div class="card-icon">03</div>
@@ -245,9 +236,7 @@ Our team includes enthusiastic younger members who share the company's vision of
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Learning is not a one-time event; it's a continuous process. Reflection helps you identify 
-                        what works, what doesn't, and how to improve. Repetition ensures you refine your skills and 
-                        knowledge over time, turning mistakes into opportunities for growth.
+                       Learning is not a one-time event; it’s a continuous process. Reflection helps you identify what works, what doesn’t, and how to improve. Repetition ensures you refine your skills and knowledge over time, turning mistakes into opportunities for growth. Review your progress regularly, seek feedback, and adjust your approach. Embrace failure as a natural part of the learning journey, using it to foster your evolution. This isn’t about pursuing perfection but engaging with the process.
                     </p>
                 </div>
                 <div class="card-icon">04</div>
@@ -446,10 +435,15 @@ Our team includes enthusiastic younger members who share the company's vision of
         background-size: cover;
         background-position: center;
         color: white;
-        padding: 180px 0 100px;
+        padding: 50px 0 50px;
         text-align: center;
       }
+@media (max-width: 768px) {
+    .about-hero {
+              padding: 30px 0 30px;
 
+    }
+}
       .hero-title {
         font-size: 3.5rem;
         margin-bottom: 20px;
@@ -622,7 +616,7 @@ Our team includes enthusiastic younger members who share the company's vision of
 
       .values-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         margin-top: 50px;
       }
@@ -835,12 +829,22 @@ Our team includes enthusiastic younger members who share the company's vision of
   background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
   border-radius: 2px;
 }
-
-/* Values Grid */
-.values-grid {
+.bigger-card-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(2, 1fr);  gap: 30px;
+}
+/* Values Grid */
+.values-grid{
+  display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+}
+@media (max-width: 786px){
+  .bigger-card-grid{
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  }
 }
 
 /* Value Cards */
@@ -862,7 +866,7 @@ Our team includes enthusiastic younger members who share the company's vision of
 }
 
 .light-card {
-  /* background-color: white; */
+  background-color: #d3d3d3;
   color: #212529;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -951,7 +955,9 @@ Our team includes enthusiastic younger members who share the company's vision of
 .dark-card .card-icon {
   color: rgba(255, 255, 255, 0.1);
 }
-
+.light-card{
+  background-color: #d3d3d3;
+}
 .light-card .card-icon {
   color: rgba(0, 0, 0, 0.05);
 }
