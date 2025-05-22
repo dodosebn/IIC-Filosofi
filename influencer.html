@@ -41,8 +41,8 @@
     <!-- Flickity CSS file-->
     <link href="assets/css/flickity.min.css" rel="stylesheet">
     <!-- Main CSS file-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/props/style.css" rel="stylesheet">
+    <link href="assets/css/props/header.css" rel="stylesheet">
     <!-- Fontawesome 5 CSS file-->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -198,74 +198,79 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-       <div class="website-header "> 
-              <nav class="navigation-bar ">
-               
-                  <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+    <!-- Navbar-->
+    <div class="website-header header-color-bg">
+      <nav class="navigation-bar ">
+       
+        <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
                  
 
-                <ul class="mobile-cta">
-                  <!--<li class="translation-contain">-->
-                  <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
-                  <!--       <span style="font-weight: 700; color: #fff; ">|</span>-->
-                  <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
-                  <!--</li>-->
-          
-                  <!-- Social nav --> 
-                  <!-- <div class="header--scoial-icons">
-                      <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
-                      <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
-                  </div> -->
-              </ul>
+        <ul class="mobile-cta">
+          <!-- <li class="translation-contain">
+              <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>
+              <span style="font-weight: 700; color: #fff; ">|</span>
+              <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>
+          </li> -->
+  
+          <!-- Social nav --> 
+          <!-- <div class="header--scoial-icons">
+              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
+              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
+          </div> -->
+      </ul>
 
-              <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
+      <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
 
 
-                <!-- Menu Icon -->
-                <div class="menu-icons" onclick="toggleMenu()">
-                  <i class="fas fa-bars menu-icon"></i>
-                  <i class="fas fa-times menu-icon"></i>
-                </div>
-                      
-                 
-                <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
-                  <ul class="navigation-bar-nav">
-                      <li class="navigation-item active lato-regular notranslate">
-                          <a class="navigation-link" href="/">Home</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="program.html">Program</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="industry.html">Industry</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="pros.html">PROS</a>
-                      </li>
-                      <div class="mobile-btn">
-                        <li class="navigation-item lato-regular notranslate reg-btn">
-                          <a class="navigation-link" href="screen-acting-start.html">Register Now</a>
-                      </li>
-                      </div>
-                      <!--<li class="navigation-item lato-regular notranslate">-->
-                      <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
-                      <!--</li>-->
-                    <!--  <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="corpers.html">CORPERS</a>
-                      </li> -->
-                  </ul>
+        <!-- Menu Icon -->
+        <div class="menu-icons" onclick="toggleMenu()">
+          <i class="fas fa-bars menu-icon"></i>
+          <i class="fas fa-times menu-icon"></i>
+        </div>
               
-                  <!-- Move CTA here -->
-                  <ul class="nav-cta">
-                  <li class="lato-regular notranslate register-now-btn text-black home-register-btn"  ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
+         
+        <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
+          <ul class="navigation-bar-nav">
+              <li class="navigation-item active lato-regular notranslate">
+                  <a class="navigation-link" href="/">Home</a>
+              </li>
+              <li class="navigation-item lato-regular notranslate">
+                  <a class="navigation-link" href="program.html">Program</a>
+              </li>
+              <li class="navigation-item lato-regular notranslate">
+                  <a class="navigation-link" href="industry.html">Industry</a>
+              </li>
+              <li class="navigation-item lato-regular notranslate">
+                <a class="navigation-link" href="pros.html">PROS</a>
+              </li>
+              <!--<li class="navigation-item lato-regular notranslate">-->
+              <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
+              <!--</li>-->
+              <!-- <li class="navigation-item lato-regular notranslate">
+                  <a class="navigation-link" href="corpers.html">CORPERS</a>
+              </li> -->
+          </ul>
+      
+          <!-- Move CTA here -->
+          <ul class="nav-cta">
+            <li class="lato-regular notranslate register-now-btn text-black" ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
 
-                      <li class="translation-contain">
-                     
-                  </ul>
-              </div>
-              
-              </nav> 
-            </div>
+              <!-- <li class="translation-contain">
+                  <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>
+                  <span style="font-weight: 700; color: #fff; ">|</span>
+                  <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>
+              </li> -->
+      
+              <!-- Social nav -->
+              <!-- <div class="header--scoial-icons">
+                  <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
+                  <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
+              </div> -->
+          </ul>
+      </div>
+      
+      </nav> 
+    </div>
 
 
 
@@ -595,7 +600,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul class="list-unstyled list-inlinetrue footer-menu-links">
               <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
               <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
-              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT US</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
               <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
             </ul>
             <ul class="list-unstyled list-inlinetrue ">
