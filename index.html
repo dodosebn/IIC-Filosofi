@@ -151,11 +151,17 @@ document.addEventListener("DOMContentLoaded", function () {
                       <li class="navigation-item lato-regular notranslate">
                           <a class="navigation-link" href="pros.html">PROS</a>
                       </li>
-                      <div class="mobile-btn">
-                        <li class="navigation-item lato-regular notranslate reg-btn">
-                          <a class="navigation-link" href="screen-acting-start.html">Register Now</a>
-                      </li>
-                      </div>
+                   <div class="mobile-btn" style="background: white !important; padding: 10px; border-radius: 6px; z-index: 999; position: relative;">
+  <li class="navigation-item lato-regular notranslate" style="list-style: none;">
+    <a class="navigation-link"
+       href="screen-acting-start.html"
+       style="background: white !important; color: black !important; padding: 10px 20px; border-radius: 5px; display: block; text-align: center; z-index: 999; position: relative;">
+      Register Now
+    </a>
+  </li>
+</div>
+
+
                       <!--<li class="navigation-item lato-regular notranslate">-->
                       <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
                       <!--</li>-->
@@ -434,7 +440,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Google Translate Script -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<style>
+    .reg-btn {
+        display: none;
+        grid-column: 1;
+        margin: 0 !important;
+        padding: 3px 8px;
+        font-size: 13px !important;
+                background: #fff !important;
+        border-radius: 7px;
+        color: black;
+        white-space: nowrap;
+        /* transition: all 0.3s ease;
+                box-shadow: 0 0 15px rgba(79, 172, 254, 0.4); */
+    }
+</style>
    
 
     <!-- HEADER SLIDER===== -->

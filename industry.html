@@ -30,7 +30,90 @@
 
 
    <!-- Google Translate API -->
+<style>
+  /* Price Module Styles */
+  .price-module-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-bottom: 5rem; /* Equivalent to pb-lg-9 pb-md-8 pb-7 */
+  }
 
+  .price-module-content {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .price-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .price-card {
+    flex: 0 0 calc(50% - 0.75rem);
+    max-width: 20rem;
+  }
+
+  .price-card-inner {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .price-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .price-icon {
+    font-size: 2.5rem;
+    color: #1C1D1E;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .price-value {
+    color: #1C1D1E;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .price-description {
+    color: #6c757d;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .price-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .price-cards-row {
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .price-module-container {
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .price-module-container {
+      padding-bottom: 4rem;
+    }
+  }
+</style>
 <script type="text/javascript">
       function googleTranslateElementInit() {
     new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
@@ -195,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       .report-btn{
         padding: 15px 60px ;
-         border-radius: 30px;
+         border-radius: 8px;
         background-color: #1C1D1E;
         color: #fff;
         margin-top: -40px;
@@ -283,46 +366,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 million jobs. Those changes are in the form of training, professionalism, appealing 
                 story plots, and high-quality production value films and series. 
               </p>
-                
-                <!-- <a 
-                class="btn btn-black-pearl lato-regular lead desktop-pdf-btn mt-4" 
-                href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
-                target="_blank">
-                Download the report summary
-                </a> -->
-                <!-- <a 
-                class="btn btn-black-pearl lato-regular lead pdf-btn" 
-                href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
-                target="_blank">
-                  Report summary
-                </a> -->
             </div>
-            <!-- <div class="btn-container">
-              <a class="btn-white-outline" href="page-about-us.html">Read more</a>
-              <a class="btn-primary" href="page-contact.html">Contact us</a>
-            </div> -->
           </div>
          
         
         </div>
       </div>
 
-      <!-- ================third SECTION============= -->
-      <div class="bg-white-smoke ">
-        <div class="pt-lg-8 pb-lg-5 pt-md-8 pb-md-5 pt-7 pb-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 offset-lg-2">
-                <div class="text-center mx-lg-0 mx-md-0 mx-3">
-                  <h2 class="mb-4">Advancing products, processes and solutions</h2>
-                  <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+   
 
-        <div class="container pb-lg-7 main">
+        <div class="container pb-lg-7 main lato-regular">
           <div class="row gx-lg-5 tabs-comtainer">
             <!-- <div class="col-lg-6"><img class="height-px-420 object-fit-cover w-100" src="assets/images/home/h06.jpg" alt="home6"></div> -->
             <div class="col-lg-6 mt-lg-0 mt-md-5 mt-5  ">
@@ -357,39 +410,33 @@ document.addEventListener("DOMContentLoaded", function () {
               </nav>
             </div>
           </div>
-        </div>
+       
 
-        <div class="container pb-lg-9 pb-md-8 pb-7 ">
-          <div class="row  indictry-card-icons">
-            <!-- <div class="col-lg-6 order-lg-1 mt-lg-0 mt-md-5 mt-5"><img class="height-px-542 object-fit-cover w-100" src="assets/images/home/h7.jpg" alt="home7"></div> -->
-            <div class="col-lg-6 mt-lg-0 mt-md-5 mt-5">
-              <!-- <div class="pr-lg-6">
-                <p class="lead text-black-pearl font-weight-bold">Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <p class="pb-4">Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-              </div> -->
-              <div class="row gx-lg-5 gx-md-5 mt-lg-4 mt-md-5 mt-5">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="bg-white px-4 py-4">
-                    <div class="px-2 py-2"><i class="mb-4 h1 display-4 fas fa-chart-area text-black-pearl"></i>
-                      <h4 class="mb-3">$20 Billion</h4>
-                      <p class="text-dim-gray mb-0">Annual revenue. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 mt-lg-0 mt-md-0 mt-5">
-                  <div class="bg-white px-4 py-4">
-                    <div class="px-2 py-2"><i class="mb-4 h1 display-4 fas fa-charging-station text-black-pearl"></i>
-                      <h4 class="mb-3">20 Million</h4>
-                      <p class="text-dim-gray mb-0">High-paying Jobs</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- Price Module section-->
+<div class="price-module-container lato-regular">
+  <div class="price-module-content">
+    <div class="price-cards-row">
+      <div class="price-card">
+        <div class="price-card-inner">
+          <i class="price-icon fas fa-chart-area"></i>
+          <h4 class="price-value">$20 Billion</h4>
+          <p class="price-description">Annual revenue.</p>
         </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-inner">
+          <i class="price-icon fas fa-charging-station"></i>
+          <h4 class="price-value">20 Million</h4>
+          <p class="price-description">High-paying Jobs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
 
-        <div class="report-btn-div">
+
+        <div class="report-btn-div lato-regular">
           <a 
           class="report-btn" 
           href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 

@@ -380,7 +380,14 @@
       bottom: 2rem;
       padding: 0 15px;
     }
-    
+            .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+    .program-hero{
+      margin-top: 5rem;
+    }
     .modern-form-container {
       margin: 20px auto;
     }
@@ -521,10 +528,12 @@
     <!-- Redesigned Hero Section -->
     <section class="program-hero">
       <div class="container">
+        <aside>
         <div class="back-arrow modern-text" onclick="history.back()">
           <i class="fas fa-arrow-left"></i>
           Back to List
         </div>
+        </aside>
         <div class="anyHowImg">
              <img src="/assets/images/program/program-details-thumbnail.jpg" alt="yoh" style="max-width: 100%; height: auto;"/>
 </div>
