@@ -1,9 +1,14 @@
 
-
-.slider {
+body{
+    overflow: hidden;
+    /* position: relative;
+    bottom: 3rem; */
+}
+    .slider {
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .slide {
@@ -11,29 +16,34 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-.slide{
-    background-position: 5% center;
+
+/* Specific targeting for the man image */
+.slide:first-child {
+    background-position: center 0% !important; 
 }
 
 .slide.active {
     opacity: 1;
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.5); */
     display: flex;
     flex-direction: column;
-    color: #fff;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
+
 .overlay-nayo {
     position: absolute;
     width: 100%;
@@ -54,11 +64,11 @@
 }
 
 /* Navigation */
-/* .nav {
+.nav {
     position: absolute;
     top: 20px;
     right: 50px;
-} */
+}
 
 /* .learn-and-thrive {
     background: rgba(0, 0, 0, 0.5); 
@@ -67,55 +77,125 @@
     text-align: left;
     color: #fff;
 } */
-
-.home-header-content .home-logo-text{
-    position: absolute;
-    bottom: 20px;
-}
-.home-logo-text img{
-    height: 120px;
-}
-
-
-
-.learn-and-thrive {
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px); 
-    padding: 20px;
-    text-align: left;
-    color: #fff;
-    margin-top: auto;
-    justify-content: flex-start;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+.Anima-Describ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 5rem;
+    overflow: hidden; 
 }
 
-.learn-and-thrive::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: inherit;
-    filter: blur(20px); /* Extra blur outside */
-    z-index: -1;
-    border-radius: 30px; /* Softer edges */
-}
-
-
-
-
-.home-header-content{
-    height: 100%;
+.home-header-content {
+    height: 100vh; 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     position: relative;
-    top: 5rem;
+    z-index: 1;
 }
 
+.home-header-content .home-logo-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: floatIn 1.2s ease-out forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.home-logo-text img {
+    height: 80px; /* Increased height */
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.home-logo-text:hover img {
+    transform: translateY(-10px) scale(1.05);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+}
+
+.home-logo-text h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Enhanced learn-and-thrive section */
+.learn-and-thrive {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 25px 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    max-width: 80%;
+    margin: 30px auto 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.3s forwards;
+    position: relative;
+    z-index: 2;
+}
+
+.learn-and-thrive::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, rgba(79,172,254,0.2), rgba(0,242,254,0.2));
+    filter: blur(15px);
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.learn-and-thrive:hover::before {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes floatIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Background image treatment (add this to your image container) */
+/* .Anima-Describ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.9;
+} */
 .site-header .navbar .navbar-nav .nav-item .nav-link{
     /* color: #fff; */
     /* background-color: red; */
@@ -136,7 +216,6 @@
 .text-center h1 span {
     font-weight: 300;
 }
-
 /* Border Button */
 .border-button {
     display: inline-flex;

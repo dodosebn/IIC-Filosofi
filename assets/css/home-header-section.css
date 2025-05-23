@@ -1,8 +1,8 @@
 
 body{
     overflow: hidden;
-    /* position: relative;
-    bottom: 3rem; */
+    position: relative;
+    bottom: 3rem;
 }
     .slider {
     position: relative;
@@ -23,9 +23,9 @@ body{
 }
 
 /* Specific targeting for the man image */
-.slide:first-child {
+/* .slide:first-child {
     background-position: center 0% !important; 
-}
+} */
 
 .slide.active {
     opacity: 1;
@@ -92,6 +92,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    top: 42rem;
     position: relative;
     z-index: 1;
 }

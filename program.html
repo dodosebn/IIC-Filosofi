@@ -18,7 +18,7 @@
     <link href="assets/css/flickity.min.css" rel="stylesheet" />
     <!-- Main CSS file-->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/header.css" rel="stylesheet" />
+    <!-- <link href="assets/css/header.css" rel="stylesheet" /> -->
     <!-- Fontawesome 5 CSS file-->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" />
     <link
@@ -74,7 +74,170 @@
         }
       });
     </script>
-   
+   <style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+  max-height: 100%;
+}
+
+header {
+  background-color: #000;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 100;
+ font-weight: bold;
+text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover{
+        color: #4facfe;
+}
+
+.register-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-btn a {
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 0rem;
+  z-index: 110;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .nav-center {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    /* margin: 0.75rem 0; */
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .nav-links a {
+    color: #fff;
+    width: 100%;
+    display: block;
+  }
+
+  .register-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .register-btn a {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #fff;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+ 
+}
+
+</style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('mobile-menu');
+      const navCenter = document.getElementById('nav-center');
+      const icon = menuToggle.querySelector('i');
+
+      menuToggle.addEventListener('click', function () {
+        const isOpen = navCenter.classList.contains('active');
+        navCenter.classList.toggle('active');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    });
+  </script>
   </head>
   <body>
     <!-- Google Translate Widget -->
@@ -84,85 +247,30 @@
  <!-- <div class="overlay"> -->
 
              <div class="website-header "> 
-              <nav class="navigation-bar ">
+                             <header>
+    <nav class="navbar">
                
-                  <a class="brand-logo desktop-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+                  <a class="brand-logo desktop-logo"
+                   href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
                  
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-                <ul class="mobile-cta">
-                  <!--<li class="translation-contain">-->
-                  <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('en')">EN</a>-->
-                  <!--       <span style="font-weight: 700; color: #fff; ">|</span>-->
-                  <!--    <a class="notranslate lato-regular" href="#" onclick="changeLanguage('fr')">FR</a>-->
-                  <!--</li>-->
-          
-                  <!-- Social nav --> 
-                  <!-- <div class="header--scoial-icons">
-                      <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-white.png" alt="icon"></a></li>
-                      <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-white.png" alt="icon"></a></li>
-                  </div> -->
-              </ul>
-
-              <a class="brand-logo mobile-logo" href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>
-
-
-                <!-- Menu Icon -->
-                <div class="menu-icons" onclick="toggleMenu()">
-                  <i class="fas fa-bars menu-icon"></i>
-                  <i class="fas fa-times menu-icon"></i>
-                </div>
-                      
+              <div class="nav-center" id="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="pros.html">Pros</a></li>
+          <li><a href="industry.html">Industry</a></li>
+        </ul>
                  
-                <div class="navigation-bar-collapse" id="navigationbarNavDropdown">
-                  <ul class="navigation-bar-nav">
-                      <li class="navigation-item active lato-regular notranslate">
-                          <a class="navigation-link" href="/">Home</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="program.html">Program</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="industry.html">Industry</a>
-                      </li>
-                      <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="pros.html">PROS</a>
-                      </li>
-                     <div style="width: 100%; display: flex; justify-content: center;">
-  <a href="screen-acting-start.html"
-     style="
-       background: white !important;
-       color: black !important;
-       padding: 10px 20px;
-       border-radius: 6px;
-       width: 70%;
-       font-size: 1rem;
-       text-align: center;
-       text-decoration: none;
-       display: block;
-       font-weight: 700;
-       box-sizing: border-box;">
-     Register Now
-  </a>
-</div>
-                      <!--<li class="navigation-item lato-regular notranslate">-->
-                      <!--    <a class="navigation-link" href="alumni.html">Alumni</a>-->
-                      <!--</li>-->
-                    <!--  <li class="navigation-item lato-regular notranslate">
-                          <a class="navigation-link" href="corpers.html">CORPERS</a>
-                      </li> -->
-                  </ul>
-              
-                  <!-- Move CTA here -->
-                  <ul class="nav-cta">
-                  <li class="lato-regular notranslate register-now-btn text-black home-register-btn"  ><a href="screen-acting-start.html" >REGISTER NOW</a></li>
-
-                      <li class="translation-contain">
-                     
-                  </ul>
-              </div>
-              
-              </nav> 
-            </div>
+           <div class="register-btn" id="register-btn">
+          <a href="screen-acting-start.html">Register Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
     <!-- End Navbar-->
     <main class="programs-page">
       <section class="program-hero">
