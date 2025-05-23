@@ -12,6 +12,14 @@ body, html{
 font-weight: 400;
 font-size: 1rem;
 }
+.pro-la{
+  padding-left: 0;
+}
+
+  @media (min-width: 768px) {
+        .pro-la{padding-left: 4rem;}
+      
+}
 /* font-size:
 ; */
 /* Hero Section */

@@ -315,6 +315,44 @@ header {
   top: 0.3rem; /* Adjusted upward for better alignment */
   z-index: 110;
 }
+/* Main slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Individual slide with background image */
+.slide.manny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* This creates the transparent overlay effect */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+        z-index: 1;
+    }
+}
+
+/* Content that should appear above the overlay */
+.hero-section {
+    position: relative; /* Changed from absolute */
+    z-index: 2; /* Above the overlay */
+    /* ... keep your other styles ... */
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -410,11 +448,9 @@ header {
   <!-- --scroll down---- -->
    <main style="    background: rgba(0, 0, 0, 0.5);
 ">
-<div class="slider " id="hero-section">
-       <div class="slide active manny" style="background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
-
-       <div class="slide active manny" style=" background-position: none; 
-background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
+<div class="slider" id="hero-section">
+    <div class="slide active manny" style="background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
+</div>
 
    <div class="website-header "> 
 
@@ -521,7 +557,7 @@ background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
 
       <!-- LEARN AND THRIVE SECTION==================== -->
 
-
+<section style="position: relative; bottom: 4rem;">
       <div id='learn-and-thrive' class='learn-and-thrive-section bg-black-pearl '>
    
         <div class='learn-and-thrive-paragraph'>
@@ -632,7 +668,7 @@ background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
      </div>
     </div>
   
-    <div class="section video-three" id="pro-vdieo-section-four">
+    <div class="section video-four" id="pro-vdieo-section-four">
       <!-- ==== Videos ==== -->
        <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
          <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
@@ -706,7 +742,7 @@ background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
     </div>
   </div>
 </div>
-
+</section>
 
 
     
