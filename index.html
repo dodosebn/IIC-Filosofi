@@ -103,12 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 header {
   /* background-color: #fff; */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   padding: 1rem 2rem;
   position: relative;
   z-index: 100;
-      font-weight: 700;
-font-size: large;
+ font-weight: bold;
 text-transform: uppercase;
 }
 
@@ -140,8 +139,8 @@ text-transform: uppercase;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #666;
+.nav-links a:hover{
+        color: #4facfe;
 }
 
 .register-btn {
@@ -152,8 +151,8 @@ text-transform: uppercase;
 
 .register-btn a {
   text-align: center;
-  background-color: #333;
-  color: #fff;
+  color: #333;
+  background-color: #fff;
   padding: 0.6rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
@@ -169,7 +168,7 @@ text-transform: uppercase;
   border: none;
   position: absolute;
   right: 2rem;
-  top: 1rem;
+  top: 0rem;
   z-index: 110;
 }
 
@@ -177,6 +176,7 @@ text-transform: uppercase;
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
   }
 
@@ -195,14 +195,15 @@ text-transform: uppercase;
 
   .nav-links {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
 
   .nav-links li {
-    margin: 0.75rem 0;
+    /* margin: 0.75rem 0; */
     width: 100%;
-    font-size: large;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
   }
@@ -228,6 +229,7 @@ text-transform: uppercase;
   .menu-toggle {
     display: block;
   }
+ 
 }
 
 </style>
@@ -281,14 +283,14 @@ text-transform: uppercase;
 
               <div class="nav-center" id="nav-center">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Pros</a></li>
-          <li><a href="#">Industry</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="pros.html">Pros</a></li>
+          <li><a href="industry.html">Industry</a></li>
         </ul>
                  
            <div class="register-btn" id="register-btn">
-          <a href="#">Register Now</a>
+          <a href="screen-acting-start.html">Register Now</a>
         </div>
       </div>
     </nav>

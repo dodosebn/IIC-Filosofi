@@ -9,8 +9,8 @@
 body, html{
   overflow-x: hidden;
     font-family: "Lato", serif;
-  font-weight: 400;
-  font-style: normal;
+font-weight: 700;
+font-size: large;
 }
 p{
   color: #495057;

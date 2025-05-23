@@ -24,7 +24,7 @@ body{
 
 /* Specific targeting for the man image */
 .slide:first-child {
-    background-position: center -5% !important; 
+    background-position: center 0% !important; 
 }
 
 .slide.active {
