@@ -1,5 +1,9 @@
 
-
+body{
+    overflow: hidden;
+    /* position: relative;
+    bottom: 3rem; */
+}
     .slider {
     position: relative;
     width: 100%;
@@ -75,6 +79,9 @@
 } */
 .Anima-Describ {
     position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 5rem;
     overflow: hidden; 
 }
 
