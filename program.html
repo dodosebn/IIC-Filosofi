@@ -74,174 +74,12 @@
         }
       });
     </script>
-   <style>
-  * {
-  margin: 0;
-  padding: 0;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.brand-logo img {
-  height: 40px;
-  width: auto;
-  max-height: 100%;
-}
-
-header {
-  background-color: #000;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-  padding: 1rem 2rem;
-  position: relative;
-  z-index: 100;
- font-weight: bold;
-text-transform: uppercase;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.nav-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 2;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover{
-        color: #4facfe;
-}
-
-.register-btn {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.register-btn a {
-  text-align: center;
-  color: #333;
-  background-color: #fff;
-  padding: 0.6rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: #333;
-  background: none;
-  border: none;
-  position: absolute;
-  right: 2rem;
-  top: 0rem;
-  z-index: 110;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .nav-center {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .nav-center.active {
-    display: flex;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .nav-links li {
-    /* margin: 0.75rem 0; */
-    width: 100%;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .nav-links a {
-    color: #fff;
-    width: 100%;
-    display: block;
-  }
-
-  .register-btn {
-    width: 100%;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .register-btn a {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #fff;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
- 
-}
-
-</style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuToggle = document.getElementById('mobile-menu');
-      const navCenter = document.getElementById('nav-center');
-      const icon = menuToggle.querySelector('i');
-
-      menuToggle.addEventListener('click', function () {
-        const isOpen = navCenter.classList.contains('active');
-        navCenter.classList.toggle('active');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-times');
-      });
-    });
-  </script>
+<link rel="stylesheet" href="./assets/css/newHeader.css">
+<script src="./assets/js/newHeader.js"></script>
   </head>
   <body>
     <!-- Google Translate Widget -->
-    <div id="google_translate_element" style="display: none"></div>
+    <div id="google_translate_element" style="display: none" ></div>
 
     <!-- Navbar-->
  <!-- <div class="overlay"> -->
@@ -272,26 +110,26 @@ text-transform: uppercase;
     </nav>
   </header>
     <!-- End Navbar-->
-    <main class="programs-page">
-      <section class="program-hero">
+    <main class="programs-page" style="position: relative; bottom: 3rem" >
+      <section class="program-hero" style="padding-left: 4rem;">
         <div class="hero-content">
           <h1 class="hero-title">PROGRAM</h1>
           <div class="hero-text">
-            <p class="hero-paragraph">
+            <p class="hero-paragraph modern-text">
               So you're naturally talented, your uncle is a "big" film producer,
               and you're good-looking; then what? Talent alone is not enough!
               Nepotism (favoritism) does not result in outstanding achievements!
               Good looks won't sustain a career! None of these states of being
               will help you in your international career.
             </p>
-            <p class="hero-paragraph">
+            <p class="hero-paragraph modern-text">
               Our programs cater to individuals who aspire to work globally. For
               African film professionals, "local" must evolve into "global."
               Only those capable and possess the skills, discipline, and
               dedication will benefit from the 20 million high-paying jobs
               outlined in the 2021 UNESCO report.
             </p>
-            <p class="hero-paragraph">
+            <p class="hero-paragraph modern-text">
               Our training standards will align you with international industry
               benchmarks, equipping you for a fulfilling career.
             </p>
@@ -312,7 +150,7 @@ text-transform: uppercase;
             </div>
             <div class="card-content">
               <h3 class="card-title">Screen Acting START</h3>
-              <p class="card-description">
+              <p class="card-description lato-regular">
                 A course designed to introduce beginners to film acting.
               </p>
               <div class="card-action">
@@ -339,7 +177,7 @@ text-transform: uppercase;
             </div>
             <div class="card-content">
               <h3 class="card-title">Screen Acting PRO | ONE</h3>
-              <p class="card-description">
+              <p class="card-description lato-regular">
                 An advanced program for working actors taught by a Hollywood
                 actor.
               </p>
@@ -367,7 +205,7 @@ text-transform: uppercase;
             </div>
             <div class="card-content">
               <h3 class="card-title">Screen Acting YOUTH</h3>
-              <p class="card-description">
+              <p class="card-description lato-regular">
                 A course to introduce those under 15 years old to screen acting.
               </p>
                <div class="card-action">
@@ -394,7 +232,7 @@ text-transform: uppercase;
             </div>
             <div class="card-content">
               <h3 class="card-title">Screen Acting Total</h3>
-              <p class="card-description">
+              <p class="card-description lato-regular">
                 A course integrating beginner, intermediate, and advanced
                 levels.
               </p>
@@ -421,7 +259,7 @@ text-transform: uppercase;
             </div>
             <div class="card-content">
               <h3 class="card-title">Screen Writing START</h3>
-              <p class="card-description">
+              <p class="card-description lato-regular">
                A course about everything to do before the writing begins.
               </p>
                <div class="card-action">
