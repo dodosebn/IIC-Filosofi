@@ -58,9 +58,9 @@
   }
 
   .price-card-inner {
-    background: white;
+    background: #007bff;;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 3.5rem;
     height: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -86,15 +86,15 @@
 
   .price-value {
     color: #1C1D1E;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin-bottom: 0.75rem;
-    font-weight: 600;
+    font-weight: 900;
   }
 
   .price-description {
-    color: #6c757d;
+    color: #fff;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /* Responsive adjustments */
@@ -244,13 +244,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .report-btn{
         padding: 15px 60px ;
          border-radius: 8px;
-        background-color: #1C1D1E;
+        background-color: #007bff;;
         color: #fff;
         margin-top: -40px;
       }
       .report-btn:hover{
         color: #fff;
-        background-color: #292929;
+        background-color: #007bff;;
       }
     
       @media (max-width: 1350px) {
@@ -335,8 +335,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <style>
 .content-section {
   padding-left: 0;
-  background-color: #f5f5f5; /* white-smoke */
+  background-color: #f5f5f5; 
+  padding-top: 4rem;
+  padding-bottom: 4rem;/* white-smoke */
   margin-top: 0.5rem;
+  /* height: 60rem; */
   display: flex;               /* center container horizontally */
   justify-content: center;     /* center container horizontally */
 }
@@ -362,10 +365,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .text-box h4 {
   margin-bottom: 0.5rem;
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  text-align: center;         /* center just the h4 */
+  color: #007bff;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 1.7rem;
+  font-weight: 900;
+  /* text-align: center;        */
 }
 
 .text-box p {
@@ -440,14 +444,14 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="price-cards-row">
       <div class="price-card">
         <div class="price-card-inner">
-          <h4 class="price-value">$20 Billion</h4>
-          <p class="price-description">Annual revenue.</p>
+          <h4 class="price-value open-sans-bold">$20 Billion</h4>
+          <p class="price-description lato-bold">Annual revenue.</p>
         </div>
       </div>
       <div class="price-card">
         <div class="price-card-inner"  style="display:flex; justify-content: center; flex-direction: column;">
-          <h4 class="price-value">20 Million</h4>
-          <p class="price-description">High-paying Jobs</p>
+          <h4 class="price-value open-sans-bold">20 Million</h4>
+          <p class="price-description lato-bold">High-paying Jobs</p>
         </div>
       </div>
     </div>
@@ -456,12 +460,12 @@ document.addEventListener("DOMContentLoaded", function () {
  </div>
 
 
-        <div class="report-btn-div lato-regular">
+        <div class="report-btn-div lato-bold">
           <a 
           class="report-btn" 
           href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
           target="_blank">
-            REPROT SUMMARY
+            REPORT SUMMARY
           </a>
         </div>
      
