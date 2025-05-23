@@ -92,7 +92,7 @@ header {
   border: none;
   position: absolute;
   right: 1.5rem;
-  top: 0.5rem; /* ✅ Slightly lifted */
+  top: 0.3rem; /* Moved up a bit */
   z-index: 110;
 }
 
@@ -102,6 +102,24 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Remove flex-grow to avoid uneven spacing */
+  .brand-logo,
+  .nav-center,
+  .register-btn {
+    flex: none; /* prevent stretching */
+  }
+
+  /* Center all navbar items and remove horizontal margin */
+  .navbar > * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Add vertical spacing between items */
+  .navbar > * + * {
+    margin-top: 1rem;
   }
 
   .nav-center {
@@ -123,6 +141,10 @@ header {
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    padding-left: 0;    /* Reset default ul padding */
+    margin-left: 0;     /* Reset left margin */
+    margin-right: 0;    /* Reset right margin */
+    max-width: 300px;   /* Optional to help centering */
     text-align: center;
   }
 
