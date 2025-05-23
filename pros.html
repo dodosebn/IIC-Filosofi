@@ -219,9 +219,10 @@ margin-top: 22px;
     }
   </style>
 <style>
-* {
+  * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Added for better box model handling */
 }
 
 .brand-logo {
@@ -257,6 +258,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  min-height: 60px; /* prevent layout shift */
 }
 
 .nav-center {
@@ -310,7 +312,7 @@ header {
   border: none;
   position: absolute;
   right: 2rem;
-  top: 1rem;
+  top: 0.3rem; /* Adjusted upward for better alignment */
   z-index: 110;
 }
 
@@ -319,7 +321,25 @@ header {
   .navbar {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Changed from flex-start to center for full centering */
+  }
+
+  /* Prevent flex-grow on mobile so items don’t stretch */
+  .brand-logo,
+  .nav-center,
+  .register-btn {
+    flex: none;
+  }
+
+  /* Remove horizontal margins from navbar children for perfect centering */
+  .navbar > * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Add vertical spacing between navbar items */
+  .navbar > * + * {
+    margin-top: 1rem;
   }
 
   .nav-center {
@@ -340,12 +360,16 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-left: 0;   /* Reset ul padding */
+    margin-left: 0;    /* Reset left margin */
+    margin-right: 0;   /* Reset right margin */
+    max-width: 300px;  /* Optional: limits width to center nicely */
+    text-align: center;
   }
 
   .nav-links li {
     width: 100%;
     font-weight: bolder;
-    text-align: center;
     text-transform: uppercase;
   }
 
@@ -353,11 +377,6 @@ header {
     color: #fff;
     width: 100%;
     display: block;
-    text-decoration: none;
-    font-family: "Lato", serif;
-    font-weight: 700;
-    font-style: normal;
-    transition: color 0.3s;
   }
 
   .register-btn {

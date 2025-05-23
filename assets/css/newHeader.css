@@ -92,7 +92,7 @@ header {
   border: none;
   position: absolute;
   right: 1.5rem;
-  top: 0.3rem; /* Moved up a bit */
+  top: -0.5rem; /* Moved up a bit */
   z-index: 110;
 }
 
