@@ -353,6 +353,11 @@ header {
     z-index: 2; /* Above the overlay */
     /* ... keep your other styles ... */
 }
+  header.scrolled {
+  background-color: #000 !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -436,10 +441,34 @@ header {
   .action-text:hover {
     color: #4facfe;
   }
+
 }
 
 </style>
 <script src="./assets/js/newHeader.js"></script>
+<script>
+  function handleScroll() {
+    const header = document.querySelector('header');
+    const slider = document.querySelector('.slider');
+    const threshold = slider ? slider.offsetHeight : 100;
+
+    // Only apply on screens wider than 768px
+    if (window.innerWidth > 768) {
+      if (window.scrollY > threshold) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    } else {
+      // Remove the class on small screens to ensure header stays transparent
+      header.classList.remove('scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll); // also handle window resizing
+  window.addEventListener('DOMContentLoaded', handleScroll);
+</script>
 
   <!-- Google Translate Widget -->
   <div id="google_translate_element" style="display: none;"></div>
@@ -549,7 +578,7 @@ header {
     }
   }
 </style>
-</style>
+
 
 
             </main>
