@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Site Title-->
+    <title>filosofi | learn & thrive</title> 
+    <meta name="description" content="filosofi"> 
+   <!-- Open Graph Meta Tags for Facebook, WhatsApp, Telegram, LinkedIn -->
+    <meta property="og:title" content="INFLUENCER - filosofi | learn & thrive">
+    <meta property="og:description" content="Make money. Make the industry better. Make Your Mark.">
+    <meta property="og:image" content="https://filosofi.africa/assets/images/influencer/influencer-m.jpg">
+    <meta property="og:url" content="https://filosofi.africa/influencer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="filosofi | learn & thrive">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="INFLUENCER - filosofi | learn & thrive">
+    <meta name="twitter:description" content="Make money. Make the industry better. Make Your Mark.">
+    <meta name="twitter:image" content="https://filosofi.africa/assets/images/influencer/influencer-m.jpg">
+    <meta name="twitter:url" content="https://filosofi.africa/influencer">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+
+    <!-- Instagram Open Graph Meta (Instagram pulls from Facebook OG tags, but this ensures better compatibility) -->
+    <meta property="og:image" content="https://filosofi.africa/assets/images/influencer/influencer-m.jpg">
+    <meta property="og:image:secure_url" content="https://filosofi.africa/assets/images/influencer/influencer-m.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- TikTok Sharing Meta (TikTok doesn't support OG but uses canonical URL) -->
+    <link rel="canonical" href="https://filosofi.africa/influencer">
+ 
+
+    <!-- Bootstrap CSS file-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flickity CSS file-->
+    <link href="assets/css/flickity.min.css" rel="stylesheet">
+    <!-- Main CSS file-->
+    <link href="assets/css/props/style.css" rel="stylesheet">
+    <!-- <link href="assets/css/props/header.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="/assets/css/header.css"> -->
+    <!-- Fontawesome 5 CSS file-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Magnific Popup CSS-->
+    <!-- <link href="assets/css/magnific-popup.css" rel="stylesheet"> -->
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OPEN SANS, LATO & MONTSERRAT==== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+   <!-- Google Translate API -->
+
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    let googleSelect = document.querySelector(".goog-te-combo");
+
+    if (googleSelect) {
+        googleSelect.value = lang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+
+    // Update the displayed language in the dropdown
+    document.getElementById("selectedLang").innerText = lang.toUpperCase();
+
+    // Save selected language in local storage
+    localStorage.setItem("selectedLang", lang);
+}
+
+// Ensure language persists on page reload
+document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("selectedLang") || "en";
+    document.getElementById("selectedLang").innerText = savedLang.toUpperCase();
+
+    let googleSelect = document.querySelector(".goog-te-combo");
+    if (googleSelect) {
+        googleSelect.value = savedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+});
+   </script>
+   <script src="./assets/js/newHeader.js"></script>
+   <link rel="stylesheet" href="./assets/css/newHeader.css">
+
+  </head>
+  <body>
+
+  <style>
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+          display: none !important;
+      }
+      body{
+          top: 0px !important;
+      }
+      .corper-hero-section{
+        background-image: url("assets/images/corpers-image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 65vh;
+      }
+      .influncer-text{
+        max-width: 1000px;
+        /* margin-bottom: 20px; */
+        padding: 30px;
+      }
+    
+      @media (max-width: 1200px) {
+       .program-image-card{
+        max-width: 740px !important;
+        padding: 0 30px;
+       }
+       .influncer-text{
+        max-width: 900px;
+      }
+    
+      }
+      @media (max-width: 768px) {
+        .corper-hero-section{
+          min-height: 45vh;
+        }
+        .influncer-text{
+        padding: 15px;
+      }
+      .program-image-card{
+        max-width: 740px !important;
+        padding: 0 15px;
+      }
+      }
+
+  
+    /* General form styling */
+    .input-container {
+        margin-bottom: 0;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    input:focus{
+      outline: none;
+
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* For Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    /* input:required, select:required {
+        border-color: red;
+    } */
+
+    .text-danger {
+        color: red;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .checkbox-container input {
+        width: auto;
+    }
+
+  </style>
+
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+
+
+
+
+    <!-- Navbar-->
+    <div class="website-header "> 
+                                    <header>
+    <nav class="navbar">
+               
+                  <a class="brand-logo desktop-logo"
+                   href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+                 
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+              <div class="nav-center" id="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+          <li><a href="pros.html">Pros</a></li>
+        </ul>
+                 
+           <div class="register-btn" id="register-btn">
+          <a href="screen-acting-start.html">Register Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+    <!-- End Navbar-->
+    <article class="entry">
+      <div class="entry-content">
+        
+       <!-- hero section--- -->
+         <section class="about-hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">INFLUENCER</h1>
+            </div>
+          </div>
+        </section>
+
+
+
+    <!-- ============SECTION ONE--------------------- -->
+
+    <div class="px-3 pt-lg-5  pt-4 ">
+      <div class="row justify-content-lg-center">
+        <div class="influncer-text">
+            <!-- <div class="entry-meta-top"><span class="entry-meta-category"><i class="fas fa-folder"></i><a href="blog-three-col.html">Steels</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            </div> -->
+            <h3 class="mb-5 entry-title font-weight-bold open-sans-bold">
+              Make our film industry better. Make your money. Make Your Mark.
+            </h3>
+          <p class="lead mb-4 lato-regular text-dark">
+            Influencers, you’re great at what you do, so now do it for a good reason. We all agree that 
+            the Nigerian film industry has much more potential than it does now. 
+            We know we can do much better. To get to where we want to be, we need to reset, 
+            rejuvenate, and repurpose.
+            </p>
+          <div class="pt-2">
+            <p class="lead lato-regular text-dark">
+              Most screen actors and screenwriters in the African film industry have little or 
+              no professional training. It’s time to change that; you, the influencers, can be 
+              a major part of that change. And make money while bringing in change. Introduce 
+              filosofi Programs to your followers and get paid. 
+
+            </p>
+          </div>
+          <div class="pt-2">
+            <p class="lead lato-regular text-dark">
+              We understand the economic challenges and feel your pain. However, you can turn things around. 
+              This influencer program is designed to help you earn extra cash by engaging with followers in 
+              ways that bring about positive change in Nigeria, benefiting us and future generations. 
+
+            </p>
+          </div>
+          <div class="pt-2">
+            <p class="lead lato-regular text-dark">
+              According to the UN, the African film industry has a $20 billion annual revenue potential, 
+              most of which will come from Nigeria. Unfortunately, this current trajectory will never realize 
+              this potential. The report also states that 20 million high-paying jobs will be created, but those 
+              jobs will only be for the most professional and the best trained. 
+            </p>
+          </div>
+          <div class="pt-2">
+            <p class="lead lato-regular text-dark">
+              Place your influencer link on your social media profiles and create content encouraging people to 
+              click on your link; when someone registers, you’ll receive a commission. It truly is that easy. 
+              No hassles, no drama, no complexities. We provide you with an opportunity to generate income in a 
+              tough economy. Earn money while you sleep.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- =====Section 2============== -->
+
+              <div class="program-image-card pb-4">
+                <img src="assets/images/influencer/influencer-m.jpg" alt="Influncer">
+              
+                <div class="share-container">
+                  <span class="lato-regular">SHARE:</span>
+                  <div class="share-icons">
+                    <a class="whatsapp-share-icon" href="https://api.whatsapp.com/send?text=Check%20this%20out:%20https://filosofi.africa/influencer" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="facebook-share-icon" href="https://www.facebook.com/sharer/sharer.php?u=https://filosofi.africa/influencer" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="twitter-share-icon" href="https://twitter.com/intent/tweet?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a class="email-share-icon" href="mailto:?subject=Check%20this%20out&body=https://filosofi.africa/influencer">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a class="instagram-share-icon" href="https://www.instagram.com/?url=https://filosofi.africa/influencer" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="tiktok-share-icon" href="https://www.tiktok.com/share?url=https://filosofi.africa/influencer" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="telegram-share-icon" href="https://t.me/share/url?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                </div>
+              </div>
+              <!-- =====Section 3============== -->
+
+                    <div class="program-image-card pb-4 pt-6">
+                      <img src="assets/images/influencer/influencer-f.jpg" alt="Influncer">
+                    
+                      <div class="share-container">
+                        <span class="lato-regular">SHARE:</span>
+                        <div class="share-icons">
+                          <a class="whatsapp-share-icon" href="https://api.whatsapp.com/send?text=Check%20this%20out:%20https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-whatsapp"></i>
+                          </a>
+                          <a class="facebook-share-icon" href="https://www.facebook.com/sharer/sharer.php?u=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-facebook"></i>
+                          </a>
+                          <a class="twitter-share-icon" href="https://twitter.com/intent/tweet?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                              <i class="fab fa-x-twitter"></i>
+                          </a>
+                          <a class="email-share-icon" href="mailto:?subject=Check%20this%20out&body=https://filosofi.africa/influencer">
+                              <i class="fas fa-envelope"></i>
+                          </a>
+                          <a class="instagram-share-icon" href="https://www.instagram.com/?url=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a class="tiktok-share-icon" href="https://www.tiktok.com/share?url=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-tiktok"></i>
+                          </a>
+                          <a class="telegram-share-icon" href="https://t.me/share/url?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                              <i class="fab fa-telegram"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+              <!-- =====Section 3============== -->
+
+                    <div class="program-image-card pb-4 pt-6">
+                      <img src="assets/images/influencer/influencer-all.jpg" alt="Influncer">
+                    
+                      <div class="share-container">
+                        <span class="lato-regular">SHARE:</span>
+                
+                        <div class="share-icons">
+                          <a class="whatsapp-share-icon" href="https://api.whatsapp.com/send?text=Check%20this%20out:%20https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-whatsapp"></i>
+                          </a>
+                          <a class="facebook-share-icon" href="https://www.facebook.com/sharer/sharer.php?u=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-facebook"></i>
+                          </a>
+                          <a class="twitter-share-icon" href="https://twitter.com/intent/tweet?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                              <i class="fab fa-x-twitter"></i>
+                          </a>
+                          <a class="email-share-icon" href="mailto:?subject=Check%20this%20out&body=https://filosofi.africa/influencer">
+                              <i class="fas fa-envelope"></i>
+                          </a>
+                          <a class="instagram-share-icon" href="https://www.instagram.com/?url=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a class="tiktok-share-icon" href="https://www.tiktok.com/share?url=https://filosofi.africa/influencer" target="_blank">
+                              <i class="fab fa-tiktok"></i>
+                          </a>
+                          <a class="telegram-share-icon" href="https://t.me/share/url?url=https://filosofi.africa/influencer&text=Check%20this%20out!" target="_blank">
+                              <i class="fab fa-telegram"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+        <!-- =======section 3  ================ -->
+
+<!-- 
+
+        <div class="affiliate-table-container">
+
+        <h4 class="mt-5 mb-4">Bordered table</h4>
+        <table class="table mb-5 table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+        <!-- ========SECTION 4================ -->
+
+
+        <div class=" px-3">
+          <!-- <div class="row justify-content-lg-center pt-6">
+            <div class="col-lg-8 pr-lg-10">
+              <h4 class="mb-4 open-sans-bold">We supply the steels for onshore and offshore platforms</h4>
+              <p class="lead lato-regular">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+                et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
+                est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
+                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam e
+                rat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+            <p class="lead lato-regular">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+              sadipscing  accusam et justo duo dolores rebum.
+            </p>            
+          </div>
+          </div> -->
+       
+      <!-- ========influencer FORM================ -->
+
+      <div class="row justify-content-lg-center mt-5">
+        <div class="col-lg-8">
+            <!-- Comments Area-->
+            <div class="comments comments-area container-small mt-4" id="comments">
+                <div class="comment-respond" id="respond">
+                    <h3 class="comment-reply-title mt-3 open-sans-bold" id="reply-title">Sign Up For Our Influencer Program</h3>
+                    <p class="lato-regular">Your email address will not be published. Required fields are marked *</p>
+                    <form class="comment-form" id="commentform" action="assets/php/affiliate-signup.php" method="post" novalidate="">
+                     
+                      <p class="input-container">
+                        <label class="lato-bold" for="author">Full Name <span class="text-danger">*</span></label>
+                        <input id="author" name="author" type="text" maxlength="245" required>
+                    </p>
+                    
+                    <p class="input-container">
+                        <label class="lato-bold" for="email">Email <span class="text-danger">*</span></label>
+                        <input id="email" name="email" type="email" maxlength="100" required>
+                    </p>
+                    
+                    <p class="input-container">
+                        <label class="lato-bold" for="city ">City <span class="text-danger">*</span></label>
+                        <input id="city" name="city" type="text" maxlength="100" required>
+                    </p>
+         
+                    <!-- <p class="input-container">
+                      <label class="lato-bold" for="experience">Experience <span class="text-danger">*</span></label>
+                      <select id="experience" name="experience" required>
+                          <option class="lato-regular" value="" disabled selected>Select</option>
+                          <option class="lato-regular" value="Beginner">Beginner</option>
+                          <option class="lato-regular" value="Intermediate">Intermediate</option>
+                          <option class="lato-regular" value="Expert">Expert</option>
+                      </select>
+                  </p> -->
+                  
+                    
+                    <p class="input-container">
+                        <label class="lato-bold" for="number">Phone Number <span class="text-danger">*</span></label>
+                        <input id="number" type="number" name="number" maxlength="15" required>
+                    </p>
+                    
+                    <p class="input-container">
+                        <label class="lato-bold" for="whatsapp">WhatsApp Number <span class="text-danger">*</span></label>
+                        <input id="whatsapp" type="number" name="whatsapp" maxlength="15" required>
+                    </p>
+
+
+                    
+                 
+                <!--  <div style="display: flex; flex-direction: column; width: 300px; align-items: flex-start;">-->
+                <!--    <label class="lato-bold">Select which applies <span class="text-danger">*</span></label>-->
+                
+                <!--    <div style="display: flex; align-items: center; gap: 5px;">-->
+                <!--        <input type="radio" id="regular" name="category" value="Regular" class="mt-1" required>-->
+                <!--        <label for="regular" class="lato-regular">Regular</label>-->
+                <!--    </div>-->
+                
+                  
+                
+                <!--    <div style="display: flex; align-items: center; gap: 5px;">-->
+                <!--        <input type="radio" id="influencer" name="category" value="Influencer" class="mt-1">-->
+                <!--        <label for="influencer" class="lato-regular">Influencer</label>-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                  <div class="form-submit">
+                    <button type="submit" id="submit-btn" class="btn btn-black-pearl lato-regular">Join Now!</button>
+                    <span id="form-status" style="margin-left: 10px;"></span>
+                  </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- ===END OF FORM=====     -->
+          
+        </div>
+      </div>
+    </article>
+
+
+  
+    
+
+    <!-- Footer-->
+  <footer class="site-footer">
+      <div class="container footer-widgets align-items-center">
+            <div><a class="footer-brand" href="/"><img src="/assets/images/logo/logo-filosofi-wht.png" alt="logo" ></a></div>
+          
+          <div class="footer-menu mt-4">
+            <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+            <ul class="list-unstyled list-inlinetrue ">
+            <li class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal" ><a href="influencer.html" >INFLUENCER</a></li>
+            </ul>
+          </div>
+                   
+            <div class="mt-4 social-icons-mobile">
+            <ul class="list-unstyled list-inlinetrue social-icons">
+              <li class=""><a href="https://www.facebook.com/ideaiscapital" target="_blank"><i class="fab fa-facebook-square icon"></i></a></li>
+              <li class=""><a href="https://www.instagram.com/ideaiscapital/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+              <li class=""><a href="https://www.tiktok.com/@ideaiscapital" target="_blank"><i class="fab fa-tiktok icon"></i></a></li>
+             
+              <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
+              <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+
+              <!--<li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>-->
+              <!--<li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li>-->
+            </ul>
+          </div>
+      </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="footer-widget  text-center"> 
+              <p class="m-md-0 lato-regular">© 2025 An <a href="/" class="idea-text notranslate">Idea is Capital </a>Company • All Rights Reserved</p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+    <!-- End Footer-->
+
+
+
+    <!-- javascript files-->
+    <!-- jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- lozad js-->
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos js-->
+    <script src="assets/js/aos.js"></script>
+    <!-- Slick flickity js-->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Magnific popup js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Countdown js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!-- CountTo js-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!-- Masonry js-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <!-- Global - Main js-->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("commentform");
+          const submitBtn = document.getElementById("submit-btn");
+          const statusMsg = document.getElementById("form-status");
+      
+          form.addEventListener("submit", function (event) {
+              event.preventDefault(); // Stop default form submission
+      
+              statusMsg.style.color = "blue";
+              statusMsg.innerText = "Sending...";
+      
+              let formData = new FormData(form);
+      
+              fetch("assets/php/affiliate-signup.php", {
+                  method: "POST",
+                  body: formData,
+              })
+              .then(response => response.text())
+              .then(data => {
+                  if (data.includes("Success")) {
+                      statusMsg.style.color = "green";
+                      statusMsg.innerText = "Signup successful!";
+                      form.reset(); // Reset form after successful submission
+                  } else {
+                      statusMsg.style.color = "red";
+                      statusMsg.innerText = "Error: " + data;
+                  }
+              })
+              .catch(error => {
+                  statusMsg.style.color = "red";
+                  statusMsg.innerText = "Network error. Please try again.";
+              });
+          });
+      });
+      </script>
+      
+    
+  </body>
+</html>

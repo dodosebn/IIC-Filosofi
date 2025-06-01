@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Site Title-->
+    <title>filosofi | learn & thrive</title> 
+    <meta name="description" content="filosofi"> 
+    <!-- Bootstrap CSS file-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flickity CSS file-->
+    <link href="assets/css/flickity.min.css" rel="stylesheet">
+    <!-- Main CSS file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/header.css"> -->
+    <!-- <link href="assets/css/header.css" rel="stylesheet"> -->
+    <!-- Fontawesome 5 CSS file-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Magnific Popup CSS-->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OPEN SANS, LATO & MONTSERRAT==== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+   <!-- Google Translate API -->
+<style>
+  /* Price Module Styles */
+  .price-module-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  .price-module-content {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .price-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .price-card {
+    flex: 0 0 calc(50% - 0.75rem);
+    max-width: 20rem;
+  }
+
+  .price-card-inner {
+    background: #1E90FF;
+    border-radius: 8px;
+    padding: 3.5rem;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .price-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .price-icon {
+    font-size: 2.5rem;
+    color: #1C1D1E;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .price-value {
+    color: #1C1D1E;
+    font-size: 2.3rem;
+    margin-bottom: 0.75rem;
+    font-weight: 900;
+  }
+
+  .price-description {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .price-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .price-cards-row {
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .price-module-container {
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .price-module-container {
+      padding-bottom: 4rem;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+      function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    let googleSelect = document.querySelector(".goog-te-combo");
+
+    if (googleSelect) {
+        googleSelect.value = lang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+
+    // Update the displayed language in the dropdown
+    document.getElementById("selectedLang").innerText = lang.toUpperCase();
+
+    // Save selected language in local storage
+    localStorage.setItem("selectedLang", lang);
+}
+
+// Ensure language persists on page reload
+document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("selectedLang") || "en";
+    document.getElementById("selectedLang").innerText = savedLang.toUpperCase();
+
+    let googleSelect = document.querySelector(".goog-te-combo");
+    if (googleSelect) {
+        googleSelect.value = savedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+});
+
+   </script> 
+<link rel="stylesheet" href="./assets/css/newHeader.css">
+<script src="./assets/js/newHeader.js"></script>
+  </head>
+  <body>
+
+ 
+
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+
+
+
+   <div class="overlay">
+   <div class="website-header "> 
+             <header>
+    <nav class="navbar">
+               
+                  <a class="brand-logo desktop-logo"
+                   href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+                 
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+              <div class="nav-center" id="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+          <li><a href="pros.html">Pros</a></li>
+        </ul>
+                 
+           <div class="register-btn" id="register-btn">
+          <a href="screen-acting-start.html">Register Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+    
+    <!-- End Navbar-->
+
+
+    <style>
+      .image-container-sec-2 {
+        background: url('assets/images/home/h15.jpg') no-repeat center center;
+        background-size: cover;
+        width: 50%;
+        height: 600px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .industry-image-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+      }
+      .tabs-comtainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .indictry-card-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner-container-sec.industry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+      }
+      .report-btn-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+      .report-btn{
+        padding: 15px 60px ;
+         border-radius: 8px;
+        background-color: #1E90FF;
+        color: #fff;
+        margin-top: -40px;
+      }
+      .report-btn:hover{
+        color: #fff;
+        background-color: #1E90FF;
+      }
+    
+      @media (max-width: 1350px) {
+        .image-container-sec-2 {
+          height: 800px;
+          /* height: 50vh; */
+        }
+      }
+      @media (max-width: 1000px) {
+        .image-container-sec-2 {
+          height: 900px;
+          /* height: 50vh; */
+        }
+      }
+      @media (max-width: 993px) {
+        .image-container-sec-2 {
+          background-size: cover;
+          min-width: 50%;
+          /* height: 50vh; */
+          /* height: 400px; */
+        }
+      }
+      @media (max-width: 914px) {
+        .image-container-sec-2 {
+          background-size: cover;
+          width: 100%;
+          /* height: 50vh; */
+          height: 400px;
+        }
+      }
+      @media (max-width: 768px) {
+        .image-container-sec-2 {
+          height: 300px;
+      }
+      }
+      /* @media (max-width: 768px) {
+        .image-container-sec-2 {
+
+        }
+      } */
+    </style>
+
+    <article class="entry">
+      <div class="entry-content">
+
+        <!-- HEADER WITH ICONS ==== -->
+         <section class="about-hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">INDUSTRY</h1>
+            </div>
+          </div>
+        </section>
+
+
+
+      <!-- =========SECTION ONE =========== -->
+     <div class="industry-image-section">
+      <img src="assets/images/industry.png" alt="INDUSTRY">
+     </div>
+
+           
+      <!-- ======================================UNESCO REOORT SUMMARY================== -->
+
+<div class="content-section">
+  <div class="inner-container">
+    <div class="text-content">
+      <div class="text-box">
+        <h4 class="open-sans-bold ">Our not-so-secret plan: Keep millions of film jobs and <br /> billions in box-office earnings in Africa.</h4>
+        <p class="lato-regular text-dark ">A UNESCO report published in 2021 presents an encouraging outlook for Africa's 
+        film and audiovisual industry across 54 African countries. Although the report 
+        is comprehensive and addresses various topics, the financial and employment projections 
+        are particularly significant. It indicates that if major changes are implemented in the 
+        African film industry, it could generate an annual revenue of $20 billion and create 20 
+        million jobs. Those changes are in the form of training, professionalism, appealing 
+        story plots, and high-quality production value films and series.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.content-section {
+  padding-left: 0;
+  background-color: #f5f5f5; 
+  padding-top: 4rem;
+  padding-bottom: 4rem;/* white-smoke */
+  margin-top: 0.5rem;
+  /* height: 60rem; */
+  display: flex;               /* center container horizontally */
+  justify-content: center;     /* center container horizontally */
+}
+
+.inner-container {
+  width: 66.666667%;           /* 2/3 width of the viewport */
+}
+
+.text-content {
+  width: 100%;                 /* full width inside inner-container */
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.text-box {
+  padding-right: 1.5rem;
+  text-align: left;           /* paragraphs aligned left */
+}
+
+.text-box h4 {
+  margin-bottom: 0.5rem;
+  color: #1E90FF;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 1.7rem;
+  font-weight: 900;
+  /* text-align: center;        */
+}
+
+.text-box p {
+  color: #212529;
+  margin-bottom: 0.25rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* Mobile: center all text inside text-box and reduce padding */
+@media (max-width: 768px) {
+  .inner-container {
+    width: 100%; /* full width on mobile */
+  }
+  .text-content {
+    padding-left: 0.5rem;  /* optional: small padding */
+    padding-right: 0.5rem; /* optional: small padding */
+  }
+  .text-box {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+
+</style>
+
+
+   
+
+        <div class="container pb-lg-7 main lato-regular">
+          <!-- <div class="row gx-lg-5 tabs-comtainer">
+            <div class="col-lg-6 mt-lg-0 mt-md-5 mt-5  ">
+              <nav class="pr-lg-5">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="h6 nav-link active mr-md-6 mr-3" id="nav-Stratigy-tab" data-toggle="tab" href="#nav-Stratigy" role="tab" aria-controls="nav-Stratigy" aria-selected="true">Stratigy</a><a class="h6 nav-link mr-md-6 mr-3" id="nav-Organization-tab" data-toggle="tab" href="#nav-Organization" role="tab" aria-controls="nav-Organization" aria-selected="false">Organization</a><a class="h6 nav-link mr-md-6 mr-3" id="nav-Development-tab" data-toggle="tab" href="#nav-Development" role="tab" aria-controls="nav-Development" aria-selected="false">Development</a><a class="h6 nav-link" id="nav-Delivery-tab" data-toggle="tab" href="#nav-Delivery" role="tab" aria-controls="nav-Delivery" aria-selected="false">Delivery</a></div>
+                <div class="tab-content mt-3" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-Stratigy" role="tabpanel" aria-labelledby="nav-Stratigy-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                      <p>Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Organization" role="tabpanel" aria-labelledby="nav-Organization-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsumg </p>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Development" role="tabpanel" aria-labelledby="nav-Development-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, </p>
+                      <p>Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-Delivery" role="tabpanel" aria-labelledby="nav-Delivery-tab">
+                    <div class="pt-lg-4 pt-3">
+                      <p class="lead text-black-pearl font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,</p>
+                      <p>discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,</p>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div> -->
+       
+
+<!-- Price Module section-->
+<div class="price-module-container lato-regular">
+  <div class="price-module-content">
+    <div class="price-cards-row">
+      <div class="price-card">
+        <div class="price-card-inner">
+          <h4 class="price-value open-sans-bold">$20 Billion</h4>
+          <p class="price-description lato-bold">Annual revenue.</p>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-inner"  style="display:flex; justify-content: center; flex-direction: column;">
+          <h4 class="price-value open-sans-bold">20 Million</h4>
+          <p class="price-description lato-bold">High-paying Jobs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+
+        <div class="report-btn-div lato-bold">
+          <a 
+          class="report-btn" 
+          href="/assets/file/UNESCO - AFRICAN CINEMA REPORT - SUMMARY.pdf" 
+          target="_blank">
+            REPORT SUMMARY
+          </a>
+        </div>
+     
+
+      </div>
+
+
+                
+      </div>
+    </article>
+
+    
+   
+    
+  
+    
+
+    <!-- Footer-->
+     <footer class="site-footer">
+      <div class="container footer-widgets align-items-center">
+            <div><a class="footer-brand" href="/"><img src="/assets/images/logo/logo-filosofi-wht.png" alt="logo" ></a></div>
+          
+          <div class="footer-menu mt-4">
+            <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT<a><li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+            <ul class="list-unstyled list-inlinetrue ">
+            <li class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal" ><a href="influencer.html" >INFLUENCER</a></li>
+            </ul>
+          </div>
+                   
+            <div class="mt-4 social-icons-mobile">
+            <ul class="list-unstyled list-inlinetrue social-icons">
+              <li class=""><a href="https://www.facebook.com/ideaiscapital" target="_blank"><i class="fab fa-facebook-square icon"></i></a></li>
+              <li class=""><a href="https://www.instagram.com/ideaiscapital/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+              <li class=""><a href="https://www.tiktok.com/@ideaiscapital" target="_blank"><i class="fab fa-tiktok icon"></i></a></li>
+             
+              <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
+              <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+<!-- 
+              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>
+              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li> -->
+            </ul>
+          </div>
+      </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="footer-widget  text-center"> 
+              <p class="m-md-0 lato-regular">© 2025 An <a href="https://ideaiscapital.africa" class="idea-text notranslate">Idea is Capital </a>Company • All Rights Reserved</p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+    <!-- End Footer-->
+
+
+
+    <!-- javascript files-->
+    <!-- jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- lozad js-->
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos js-->
+    <script src="assets/js/aos.js"></script>
+    <!-- Slick flickity js-->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Magnific popup js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Countdown js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!-- CountTo js-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!-- Masonry js-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <!-- Global - Main js-->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
+  </body>
+</html>

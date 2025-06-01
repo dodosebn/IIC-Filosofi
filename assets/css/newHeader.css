@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px; /* ✅ Prevent content from hiding behind the fixed header */
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+  max-height: 100%;
+}
+
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  position: fixed; /* ✅ Stays on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 60px; /* ✅ Prevent layout shift */
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4facfe;
+}
+
+.register-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-btn a {
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff; /* ✅ White icon */
+  background: none;
+  border: none;
+  position: absolute;
+  right: 1.5rem;
+  top: -0.5rem; /* Moved up a bit */
+  z-index: 110;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Remove flex-grow to avoid uneven spacing */
+  .brand-logo,
+  .nav-center,
+  .register-btn {
+    flex: none; /* prevent stretching */
+  }
+
+  /* Center all navbar items and remove horizontal margin */
+  .navbar > * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Add vertical spacing between items */
+  .navbar > * + * {
+    margin-top: 1rem;
+  }
+
+  .nav-center {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;    /* Reset default ul padding */
+    margin-left: 0;     /* Reset left margin */
+    margin-right: 0;    /* Reset right margin */
+    max-width: 300px;   /* Optional to help centering */
+    text-align: center;
+  }
+
+  .nav-links li {
+    width: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .nav-links a {
+    color: #fff;
+    width: 100%;
+    display: block;
+  }
+
+  .register-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .register-btn a {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #fff;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .action-text:hover {
+    color: #4facfe;
+  }
+}

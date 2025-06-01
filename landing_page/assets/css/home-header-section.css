@@ -1,0 +1,312 @@
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+.overlay-nayo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+/* .learn-and-thrive {
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    padding: 20px; 
+    text-align: left;
+    color: #fff;
+} */
+
+.home-header-content .home-logo-text{
+    position: absolute;
+    bottom: 20px;
+}
+.home-logo-text h1{
+    color: #fff;
+}
+.home-logo-text h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 0 15px;
+}
+.home-logo-text img{
+    height: 70px;
+}
+
+
+
+.learn-and-thrive {
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    margin-top: auto;
+    justify-content: flex-start;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+}
+
+.learn-and-thrive::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: inherit;
+    filter: blur(20px); /* Extra blur outside */
+    z-index: -1;
+    border-radius: 30px; /* Softer edges */
+}
+
+
+
+
+.home-header-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.site-header .navbar .navbar-nav .nav-item .nav-link{
+    /* color: #fff; */
+    /* background-color: red; */
+    color: #fff
+}
+
+.text-center h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text-center h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.text-center h1 span {
+    font-weight: 300;
+}
+
+/* Border Button */
+.border-button {
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Corner Borders */
+.border-button::before,
+.border-button::after,
+.border-button span::before,
+.border-button span::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 100%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+/* Top Left */
+.border-button::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Top Right */
+.border-button::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+/* Bottom Left */
+.border-button span::before {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+/* Bottom Right */
+.border-button span::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Hover Effect - Borders move towards the center */
+.border-button:hover::before,
+.border-button:hover::after {
+    width: 100%;
+    /* height: 10px; */
+    
+}
+
+.border-button:hover span::before,
+.border-button:hover span::after {
+    width: 100%;
+    color: #fff;
+    /* height: 10px; */
+}
+
+
+.site-header .navbar .nav-item .nav-link.active::before, .site-header .navbar .nav-item .nav-link:hover::before {
+    content: "";
+    border-bottom: solid 2px #ffffff;
+    width: calc(100% - 0px);
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+  }
+
+.home-header-content .nayo-name{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .site-header .navbar .navbar-nav .nav-item .nav-link{
+        /* color: #fff; */
+        /* background-color: red; */
+        color: black
+    }
+
+    .navbar-collapse{
+        background-color: #fff;
+        width: 100%;
+        color: black;
+        border-bottom: none;
+
+        
+    }
+
+    .site-header .navbar .nav-item .nav-link.active::before, .site-header .navbar .nav-item .nav-link:hover::before {
+        content: "";
+        border-bottom: solid 2px #000000;
+        width: calc(100% - 0px);
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        z-index: 1;
+      }
+      .home-logo-text h1{
+        font-size: 60px;
+      }
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .home-header-content .nayo-name h1{
+        font-size: 40px;
+    }
+    .home-header-content .home-logo-text{
+        position: absolute;
+        bottom: 100px;
+    }
+    .home-header-content .nayo-desc{
+        font-size: 16px;
+    }
+
+    .home-header-content .nayo-name{
+        position: absolute;
+        bottom: 30px;
+    }
+    .home-logo-text h1{
+        font-size: 40px;
+        line-height: 40px;
+        padding: 15px;
+        margin-bottom: -10px;
+      }
+      .home-logo-text h2{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 460px) {
+    .home-logo-text h1{
+        font-size: 35px;
+      }
+
+}
+@media screen and (max-width: 406px) {
+
+    .home-logo-text h1{
+        font-size: 27px;
+      }
+    .home-logo-text h2{
+        font-size: 15px;
+      }
+    
+}

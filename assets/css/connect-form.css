@@ -1,0 +1,136 @@
+.connect-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.connect-form-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: space-between;
+    padding: 80px 30px;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.connect-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+.connect-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    width: 65%;
+}
+
+.connect-left-side {
+    transform: translateX(-100%);
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.connect-right-side {
+    transform: translateX(100%);
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.connect-left-top, .connect-left-bottom {
+    margin-bottom: 20px;
+}
+
+.connect-left-top span, .connect-left-bottom span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.connect-left-top h1, .connect-left-bottom h1 {
+    font-size: 26px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.connect-right-top p {
+    margin-bottom: 10px;
+}
+
+.connect-form-right-side form {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-form-right-side input, 
+.connect-form-right-side textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    border: none; 
+    border-bottom: 1px solid #030303;
+    outline: none;
+    background: transparent; 
+}
+
+
+.connect-form-right-side button {
+    padding: 10px 40px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
+
+}
+
+.connect-form-right-side button:hover {
+    background: rgb(27, 27, 27);
+}
+
+
+@media screen and (max-width: 769px)  {
+    .connect-form-container {
+        display: flex;
+       flex-direction: column;
+    }
+    .connect-right-side{
+        width: 100%;
+        gap: 50px;
+    }
+    .connect-left-side{
+       
+        gap: 20px;
+    }
+}

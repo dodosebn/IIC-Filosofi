@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Site Title-->
+    <title>filosofi | learn & thrive</title> 
+    <meta name="description" content="filosofi"> 
+    <!-- Bootstrap CSS file-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flickity CSS file-->
+    <link href="assets/css/flickity.min.css" rel="stylesheet">
+    <!-- Main CSS file-->
+    <link href="assets/css/props/style.css" rel="stylesheet">
+    <!-- <link href="assets/css/props/home-header-section.css" rel="stylesheet"> -->
+    <link href="assets/css/learn-and-thrive-section.css" rel="stylesheet">
+    <link href="assets/css/props/our-journey.css" rel="stylesheet">
+    <link href="assets/css/core-values.css" rel="stylesheet">
+    <link href="assets/css/home-header-section.css" rel="stylesheet">
+    <!-- <link href="assets/css/props/header.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/header.css"> -->
+    <link href="assets/css/props/pros-style.css" rel="stylesheet">
+    <!-- Fontawesome 5 CSS file-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Dosis|Oswald:300" rel="stylesheet">
+
+    <!-- Magnific Popup CSS-->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OPEN SANS, LATO & MONTSERRAT==== -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+       <!-- Google Translate API -->
+
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    let googleSelect = document.querySelector(".goog-te-combo");
+
+    if (googleSelect) {
+        googleSelect.value = lang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+
+    // Update the displayed language in the dropdown
+    document.getElementById("selectedLang").innerText = lang.toUpperCase();
+
+    // Save selected language in local storage
+    localStorage.setItem("selectedLang", lang);
+}
+
+// Ensure language persists on page reload
+document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("selectedLang") || "en";
+    document.getElementById("selectedLang").innerText = savedLang.toUpperCase();
+
+    let googleSelect = document.querySelector(".goog-te-combo");
+    if (googleSelect) {
+        googleSelect.value = savedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+    }
+});
+
+   </script>
+
+  </head>
+<body>
+
+
+  <style>
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+          display: none !important;
+      }
+      body{
+          top: 0px !important;
+      }
+      .gallery-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+    position: relative; 
+}
+
+.gallery-inner-section{
+    max-width: 930px;
+    padding: 15px;
+}
+.nayo-wallace-image-container{
+    display: flex;
+    gap: 20px;
+}
+.nayo-wallace-image-container .nayo-image-hidden{
+    display: none;
+}
+.nayo-bottom-images{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.nayo-bottom-images img:nth-child(1){
+    width: 31%;
+}
+.nayo-bottom-images img:nth-child(2){
+   width: 67%;
+}
+
+
+.nayo-news-image {
+margin-top: 22px;
+}
+
+.nayo-image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.nayo-image-gallery img{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 280px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.nayo-video-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media (max-width: 1179px) {
+    .gallery-section{
+       margin-top: -40px;
+    }
+
+}
+@media (max-width: 924px) {
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nayo-wallace-image-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .nayo-news-image {
+        margin-top: 20px;
+        
+    }
+    .nayo-news-image img{
+        height: 600px;
+        /* width: 380px; */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+ 
+    .nayo-video-layout, .nayo-image-gallery{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .nayo-bottom-images{
+        flex-direction: column;
+    }
+    .nayo-bottom-images img:nth-child(1){
+        width: 100%;
+    }
+    .nayo-bottom-images img:nth-child(2){
+       width: 100%;
+    }
+    
+    .nayo-image-gallery img{
+        /* min-height: 200px; */
+        max-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .nayo-video-layout .video-container img{
+        width: 100%;
+    }
+    .nayo-news-image img{
+        height: auto;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+}
+
+@media (max-width: 545px) {
+    .gallery-section{
+       margin-top: -60px;
+    }
+
+}
+    @media (max-width: 768px) {
+      body{
+        overflow: hidden;
+      }
+    }
+  </style>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added for better box model handling */
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+  max-height: 100%;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+  backdrop-filter: blur(8px); /* keeps header readable on scroll */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 60px; /* prevent layout shift */
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4facfe;
+}
+
+.register-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-btn a {
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff; /* Menu button white */
+  background: none;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 0.3rem; /* Adjusted upward for better alignment */
+  z-index: 110;
+}
+/* Main slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Individual slide with background image */
+.slide.manny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* This creates the transparent overlay effect */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+        z-index: 1;
+    }
+}
+
+/* Content that should appear above the overlay */
+.hero-section {
+    position: relative; /* Changed from absolute */
+    z-index: 2; /* Above the overlay */
+    /* ... keep your other styles ... */
+}
+  header.scrolled {
+  background-color: #000 !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Changed from flex-start to center for full centering */
+  }
+
+  /* Prevent flex-grow on mobile so items don’t stretch */
+  .brand-logo,
+  .nav-center,
+  .register-btn {
+    flex: none;
+  }
+
+  /* Remove horizontal margins from navbar children for perfect centering */
+  .navbar > * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Add vertical spacing between navbar items */
+  .navbar > * + * {
+    margin-top: 1rem;
+  }
+
+  .nav-center {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;   /* Reset ul padding */
+    margin-left: 0;    /* Reset left margin */
+    margin-right: 0;   /* Reset right margin */
+    max-width: 300px;  /* Optional: limits width to center nicely */
+    text-align: center;
+  }
+
+  .nav-links li {
+    width: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .nav-links a {
+    color: #fff;
+    width: 100%;
+    display: block;
+  }
+
+  .register-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .register-btn a {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #fff;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .action-text:hover {
+    color: #4facfe;
+  }
+
+}
+
+</style>
+<script src="./assets/js/newHeader.js"></script>
+<script>
+  function handleScroll() {
+    const header = document.querySelector('header');
+    const slider = document.querySelector('.slider');
+    const threshold = slider ? slider.offsetHeight : 100;
+
+    // Only apply on screens wider than 768px
+    if (window.innerWidth > 768) {
+      if (window.scrollY > threshold) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    } else {
+      // Remove the class on small screens to ensure header stays transparent
+      header.classList.remove('scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll); // also handle window resizing
+  window.addEventListener('DOMContentLoaded', handleScroll);
+</script>
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+  
+
+  <!-- --scroll down---- -->
+   <main style="    background: rgba(0, 0, 0, 0.5);
+">
+<div class="slider" id="hero-section">
+    <div class="slide active manny" style="background-image: url('assets/images/trainers/main-nayo-image.jpg');"></div>
+</div>
+
+   <div class="website-header "> 
+
+  
+ 
+                             <header class="lato-regular">
+    <nav class="navbar">
+               
+                  <a class="brand-logo desktop-logo"
+                   href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
+                 
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+              <div class="nav-center" id="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+
+          <li><a href="pros.html">Pros</a></li>
+        </ul>
+                 
+           <div class="register-btn" id="register-btn">
+          <a href="screen-acting-start.html">Register Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+           </div>
+    </div>
+               
+
+      
+    <section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title sans-serif-font font-bold ">NAYO WALLACE</h1>
+    <p class="hero-subtitle">ACTRESS | SINGER | ACTING COACH</p>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 5rem; /* Changed from bottom to negative margin-top */
+    background: transparent; /* More explicit than 'none' */
+    height: 0; /* Takes no vertical space */
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    top: -11rem; /* Counteracts the negative margin */
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Improves readability */
+  }
+
+  .hero-subtitle {
+    margin: 0;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Improves readability */
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    .hero-section {
+      margin-top: 4rem; /* Adjusted for mobile */
+    }
+    
+    .hero-content {
+      top: -9rem; /* Adjusted for mobile */
+    }
+  }
+</style>
+
+
+
+            </main>
+      
+
+
+      <!-- LEARN AND THRIVE SECTION==================== -->
+
+<section style=" position: relative;
+bottom: 4rem; 
+">
+      <div id='learn-and-thrive' class='learn-and-thrive-section bg-black-pearl '>
+   
+        <div class='learn-and-thrive-paragraph'>
+        <!-- <div class='learn-and-thrive-header'>
+          <h2 class="learn-and-thrive-title open-sans-bold">OUR FILOSOFI</h2>
+        </div> -->
+        <p class="lato-regular text-white">
+          Nayo Wallace is a serious actress with 30 years of experience in film, television, and theater. Her passion for acting 
+          outweighs her desire for fame. She comes from a highly motivated, creative family that has left an invaluable mark on 
+          the film industry. 
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her grandfather starred opposite the legendary Lena Horne as Chick Bailey in <b class="text-white">Stormy Weather</b> and appeared in 
+          Broadway's <b class="text-white">Guys and Dolls</b>. He also composed songs and enjoyed fame in Europe, performing out of Paris. Her 
+          grandmother, Vivian, began performing as a child with her younger sister and their childhood friend. They were 
+          known as the Dandridge Sisters. 
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her grandmother went on to perform as a singer worldwide and in film, television, radio, and voiceover work. Her 
+          dad appeared in <b class="text-white">Bright Road</b>, which starred Nayo’s great aunt, Dorothy Dandridge.
+        </p>
+        <p class="lato-regular text-white">
+          Dorothy Dandridge is the first African American woman nominated for an Oscar for Best Leading Actress in the 
+          critically acclaimed film Carmen Jones. She made several movies and paved the way for every woman of color in 
+          acting today. Nayo's great grandmother, Ruby Dandridge, was a regular on the Amos & Andy show, a recurring 
+          character on the Beulah Show, and a performer in numerous films.
+         
+         
+       </p>
+        <p class="lato-regular text-white">
+          Her passion for acting was certainly handed down. Nayo has worked in TV, film, voice-over, and on the Broadway 
+          stage. She fell in love with Africa on her first visit. She decided to bring her love of acting, the knowledge 
+          accumulated over the years, and a profound understanding of Hollywood and the industry, building a career and 
+          avoiding pitfalls. She brings all that knowledge to Africa.  
+         
+          
+        </p>
+        <p class="lato-regular text-white">
+          Nayo was born and raised in Detroit, Michigan, and currently lives in Los Angeles.
+        </p>
+       
+       
+           
+        </div>
+       </div>
+
+       <div class="section video-one" id="pro-vdieo-section">
+        <!-- ==== Videos ==== -->
+        <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+          <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+        </div> -->
+        <div class="video-container">
+          <!-- <iframe 
+              src="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto" 
+              width="640" 
+              height="360" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen>
+          </iframe> -->
+          <iframe 
+            src="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto" 
+            width="640" 
+            height="360" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+
+      </div>
+     </div>
+
+     <div class="section video-two" id="pro-vdieo-section-two">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+        src="https://player.vimeo.com/video/1061530052?h=0ee38c8a6e&quality=auto" 
+        width="640" 
+        height="360" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      
+     </div>
+     
+    </div>
+    <div class="section video-three" id="pro-vdieo-section-three">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+            src="https://player.vimeo.com/video/1061530175?h=37dc101719&quality=auto" 
+            width="640" 
+            height="360" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+
+     </div>
+    </div>
+  
+    <div class="section video-four" id="pro-vdieo-section-four">
+      <!-- ==== Videos ==== -->
+       <!-- <div class="video-container" data-vimeo="https://player.vimeo.com/video/1061530152?h=b3aa9042ef&quality=auto">
+         <img src="assets/images/trainers/nw-thumbnail-2.jpg" alt="Video Cover" class="video-cover">
+       </div> -->
+       <div class="video-container">
+        <iframe 
+          src="https://player.vimeo.com/video/1061534751?h=146278bcf6&quality=auto" 
+          width="640" 
+          height="360" 
+          frameborder="0" 
+          allow="autoplay; fullscreen; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+
+     </div>
+    </div>
+
+
+    <div class="gallery-section bg-white-smoke" id="gallery-section">
+      <!-- <h1 class="open-sans-bold">GALLERY</h1> -->
+ 
+  
+
+      <div class="gallery-inner-section">
+
+       <!-- ==== Images ==== -->
+       <div>
+        <!-- <h3 class="lato-bold">IMAGES</h3> -->
+        <div class="nayo-wallace-image-container">
+          <div class="nayo-image-gallery pt-4">
+            <img src="assets/images/trainers/nayo-slide-2.jpg" alt="nayo">
+            <img src="assets/images/trainers/IMG_2176.jpg" alt="nayo">
+            <img src="assets/images/trainers/nayo-team.png" alt="nayo">
+            <!-- <img src="assets/images/trainers/nayo-landscape-top.png" alt="nayo"> -->
+            <img src="assets/images/trainers/nayo-image-4.jpg" alt="nayo">
+        </div>
+        <div class="nayo-news-image">
+          <img src="assets/images/trainers/nayo-news.webp" alt="nayo">
+         
+
+        </div>
+     
+        </div>
+        <div class="nayo-bottom-images">
+          <img src="assets/images/trainers/nayo-image-1.jpg" alt="nayo">
+          <img src="assets/images/trainers/nayo-landscape.jpg" alt="nayo">
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+ <div id="mediaModal" class="modal">
+  <div class="modal-content">
+    <div class="media-wrapper">
+      <span class="close" onclick="closeModal()">&times;</span> 
+      <img id="modalImg">
+      <iframe
+        id="vimeoVideo"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        style="height: 100%; width: 100%;">
+      </iframe>
+    </div>
+  </div>
+</div>
+</section>
+
+
+    
+
+    <!-- Footer-->
+       <footer class="site-footer">
+      <div class="container footer-widgets align-items-center">
+            <div><a class="footer-brand" href="/"><img src="/assets/images/logo/logo-filosofi-wht.png" alt="logo" ></a></div>
+          
+          <div class="footer-menu mt-4">
+            <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="alumni.html">ALUMNI</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="about.html">ABOUT</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+            <ul class="list-unstyled list-inlinetrue ">
+            <li class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal" ><a href="influencer.html" >INFLUENCER</a></li>
+            </ul>
+          </div>
+                   
+            <div class="mt-4 social-icons-mobile">
+            <ul class="list-unstyled list-inlinetrue social-icons">
+              <li class=""><a href="https://www.facebook.com/ideaiscapital" target="_blank"><i class="fab fa-facebook-square icon"></i></a></li>
+              <li class=""><a href="https://www.instagram.com/ideaiscapital/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+              <li class=""><a href="https://www.tiktok.com/@ideaiscapital" target="_blank"><i class="fab fa-tiktok icon"></i></a></li>
+             
+              <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
+              <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+<!-- 
+              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>
+              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li> -->
+            </ul>
+          </div>
+      </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="footer-widget  text-center"> 
+              <p class="m-md-0 lato-regular">© 2025 An <a href="https://ideaiscapital.africa" class="idea-text notranslate">Idea is Capital </a>Company • All Rights Reserved</p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+
+
+
+  <!-- ---scroll up---- -->
+  <button id="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+  
+    <!-- End Footer-->
+    <!-- javascript files-->
+    <!-- jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- lozad js-->
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos js-->
+    <script src="assets/js/aos.js"></script>
+    <!-- Slick flickity js-->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Magnific popup js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Countdown js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!-- CountTo js-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!-- Masonry js-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <!-- Global - Main js-->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   
+
+    <!-- HEADER SLIDER===== -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const slides = document.querySelectorAll(".slide");
+          let currentIndex = 0;
+          let interval;
+
+          function nextSlide() {
+              slides[currentIndex].classList.remove("active");
+              currentIndex = (currentIndex + 1) % slides.length;
+              slides[currentIndex].classList.add("active");
+          }
+
+          function startAutoSlide() {
+              interval = setInterval(nextSlide, 3000);
+          }
+
+          startAutoSlide();
+      });
+
+    </script>
+
+
+<!-- SCROLL TO THE TOP========== -->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("scroll-to-top");
+
+    const sections = [
+        document.getElementById("hero-section"),
+        document.getElementById("learn-and-thrive"),
+        document.getElementById("pro-vdieo-section"),
+        document.getElementById("pro-vdieo-section-two"),
+        document.getElementById("pro-vdieo-section-three"),
+        document.getElementById("pro-vdieo-section-four"),
+        document.getElementById("gallery-section")
+    ].filter(Boolean); 
+
+    function getCurrentSectionIndex() {
+        let currentIndex = 0;
+        let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        for (let i = 0; i < sections.length; i++) {
+            let sectionTop = sections[i].offsetTop;
+            let sectionBottom = sectionTop + sections[i].offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentIndex = i;
+                break;
+            }
+        }
+        return currentIndex;
+    }
+
+    function handleScroll() {
+        let index = getCurrentSectionIndex();
+        if (index > 0) {
+            scrollTopBtn.classList.add("show");
+            scrollTopBtn.dataset.index = index;
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
+    }
+
+    scrollTopBtn.addEventListener("click", function () {
+        let index = parseInt(scrollTopBtn.dataset.index);
+        if (index > 0) {
+            sections[index - 1].scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+</script>
+
+
+<!-- ===SCROLL DOWN=== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollDownBtn = document.getElementById("scroll-down-btn");
+    const sections = [
+    document.getElementById("hero-section"),
+        document.getElementById("learn-and-thrive"),
+        document.getElementById("pro-vdieo-section"),
+        document.getElementById("pro-vdieo-section-two"),
+        document.getElementById("pro-vdieo-section-three"),
+        document.getElementById("pro-vdieo-section-four"),
+        document.getElementById("gallery-section")
+    ].filter(Boolean); // Remove null values if a section doesn't exist
+
+    function getCurrentSectionIndex() {
+        let currentIndex = 0;
+        let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        for (let i = 0; i < sections.length; i++) {
+            let sectionTop = sections[i].offsetTop;
+            let sectionBottom = sectionTop + sections[i].offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentIndex = i;
+                break;
+            }
+        }
+        return currentIndex;
+    }
+
+    function handleScroll() {
+        let index = getCurrentSectionIndex();
+        
+        // Hide scroll-down button if at the last section
+        if (index >= sections.length - 1) {
+            scrollDownBtn.classList.add("hide");
+        } else {
+            scrollDownBtn.classList.remove("hide");
+        }
+    }
+
+    scrollDownBtn.addEventListener("click", function () {
+        let index = getCurrentSectionIndex();
+        if (index < sections.length - 1) {
+            sections[index + 1].scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+</script>
+
+
+
+<!-- MEDIA MODAL=================== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("mediaModal");
+    var modalImg = document.getElementById("modalImg");
+    var videoFrame = document.getElementById("vimeoVideo");
+    var closeBtn = document.querySelector(".close");
+
+    // Open image in modal
+    document.querySelectorAll(".nayo-wallace-image-container img, .nayo-bottom-images img").forEach(function (img) {
+        img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.style.display = "block";
+            videoFrame.style.display = "none";
+            modalImg.src = this.src;
+        });
+    });
+
+    // Replace videos with a cover image and open video in modal on click
+    document.querySelectorAll(".video-container").forEach(function (videoContainer) {
+        var vimeoUrl = videoContainer.getAttribute("data-vimeo");
+        var existingImg = videoContainer.querySelector("img");
+
+        if (existingImg) {
+            // Create cover image using the existing image
+            var coverImg = document.createElement("img");
+            coverImg.src = existingImg.src; // Use the individual image source
+            coverImg.alt = existingImg.alt;
+            coverImg.style.cursor = "pointer";
+            coverImg.classList.add("video-cover");
+
+            // Replace iframe with cover image
+            videoContainer.innerHTML = "";
+            videoContainer.appendChild(coverImg);
+
+            // Open modal and load video on click
+            coverImg.addEventListener("click", function () {
+                modal.style.display = "flex";
+                modalImg.style.display = "none";
+
+                // Create a new iframe to reset video playback
+                var newIframe = document.createElement("iframe");
+                newIframe.id = "vimeoVideo";
+                newIframe.src = vimeoUrl + "&autoplay=1";
+                newIframe.setAttribute("frameborder", "0");
+                newIframe.setAttribute("allow", "autoplay; fullscreen");
+                newIframe.setAttribute("allowfullscreen", "");
+                newIframe.style.width = "100%";
+                newIframe.style.height = "100%";
+
+                // Replace the old iframe with the new one
+                videoFrame.replaceWith(newIframe);
+                videoFrame = newIframe;
+            });
+        }
+    });
+
+    // Close modal
+    function closeModal() {
+        modal.style.display = "none";
+        modalImg.style.display = "none";
+        videoFrame.style.display = "none";
+        videoFrame.src = ""; 
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+  });
+</script>
+  <style>
+    /* .learn-and-thrive-section{
+    background-color: #ffffff; 
+    min-height: 100vh ;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding-bottom: 30px;
+ }
+  */
+
+  .learn-and-thrive-section {
+    /* background: url('/assets//images//home/2ND-COLUMN-BG.jpg') no-repeat center center/cover;  */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+    position: relative; 
+}
+
+/* White overlay */
+.learn-and-thrive-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0.8);  */
+    z-index: 1; 
+}
+
+
+ .learn-and-thrive-paragraph{
+     /* margin-left: 300px;
+     margin-right: 300px; */
+     position: relative;
+     z-index: 2;
+     max-width: 1000px; 
+     padding: 15px;
+     /* padding-bottom: 100px; */
+ }
+ .learn-and-thrive-paragraph p{
+     text-align: justify;
+     font-size: 21px;
+ }
+ 
+ .journey-header{
+     margin-bottom: 30px;
+ }
+ .journey-header h2{
+     font-size: 34px;
+ }
+ 
+ 
+ .explore-button {
+     padding: 12px 20px;
+     background: #070707;
+     color: #fff;
+     font-weight: bold;
+     position: absolute;
+     left: 40px;
+     bottom: 50px; 
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s ease;
+     /* margin-top: 20px; */
+   } 
+   
+   .explore-button:hover {
+     background: #141414;
+   }
+
+
+
+
+   .learn-and-thrive-header  .learn-and-thrive-title{
+    align-items: left;
+    text-align: left;
+    padding-bottom: 30px;
+   }
+  
+ 
+   
+   
+ 
+ 
+ 
+ 
+   @media (max-width: 1180px) {
+     .learn-and-thrive{
+         max-width: 800px; 
+         padding: 15px;
+     }
+     .learn-and-thrive-section{
+      min-height: auto;
+      margin-bottom: 40px;
+   }
+   .explore-button {
+    /* left: 15px; */
+    bottom: 0; 
+  } 
+   }
+ 
+   @media (max-width: 768px) {
+     .journey-header h2{
+         font-size: 27px;
+     }
+     .learn-and-thrive-section{
+        min-height: 80vh;
+        margin-bottom: 40px;
+     }
+     .learn-and-thrive-paragraph p{
+         font-size: 17px;
+     }
+     .explore-button {
+      left: 15px;
+    } 
+   }
+
+   @media (max-width: 530px) {
+     .learn-and-thrive-section{
+         height: auto;
+         margin-bottom: 30px;
+      }
+
+      
+   }
+  </style>
+
+
+</body>
+</html>

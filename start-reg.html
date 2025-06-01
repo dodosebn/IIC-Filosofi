@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Registration</title>
+    <!-- Font Awesome -->
+  
+</head>
+<body>
+    <div class="modern-form-container">
+        <div class="form-card">
+            <!-- Form Header -->
+            <div class="form-header">
+                <h2 class="open-title">Register Now</h2>
+                <div class="form-subtitle">Begin your journey in screen acting</div>
+            </div>
+            
+            <!-- Animated Progress Bar -->
+            <div class="form-progress">
+                <div class="progress-bar"></div>
+            </div>
+            
+            <form id="enrollment-form" action="assets/php/registration.php" method="post" class="enrollment-form">
+                <div class="form-step active">
+                    <!-- Personal Information - Two fields per row -->
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="text" id="name" name="name">
+                                <label for="name">First Name</label>
+                                <i class="fas fa-user input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="text" id="surname" name="surname" required>
+                                <label for="surname">Last Name</label>
+                                <i class="fas fa-user input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="gender" name="gender" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <label for="gender">Gender</label>
+                                <i class="fas fa-venus-mars input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="age" name="age" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="16-and-under">16 & under</option>
+                                    <option value="16-21">17 - 21</option>
+                                    <option value="22-27">22 - 27</option>
+                                    <option value="28+">28 & above</option>
+                                </select>
+                                <label for="age">Age Group</label>
+                                <i class="fas fa-calendar-days input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information - Two fields per row -->
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="tel" id="mobile" name="mobile" required>
+                                <label for="mobile">Mobile Number</label>
+                                <i class="fas fa-phone input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <i class="fas fa-envelope input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program Information - Two fields per row -->
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="text" id="city" name="city" required>
+                                <label for="city">City</label>
+                                <i class="fas fa-location-dot input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="program" name="program" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="screen-acting-start">Screen Acting START</option>
+                                    <option value="screen-acting-start-early">Screen Acting START (EARLY BIRD)</option>
+                                    <option value="screen-acting-total">Screen Acting TOTAL</option>
+                                    <option value="screen-acting-total-early">Screen Acting TOTAL (EARLY BIRD)</option>
+                                    <option value="screen-acting-youth">Screen Acting YOUTH</option>
+                                    <option value="screen-acting-youth-early">Screen Acting YOUTH (EARLY BIRD)</option>
+                                    <option value="screen-acting-pro">Screen Acting PRO</option>
+                                    <option value="screen-acting-pro-kids">Screen Acting PRO-KIDS</option>
+                                    <option value="screen-acting-one">Screen Acting ONE</option>
+                                    <option value="screen-acting-one-kids">Screen Acting ONE-KIDS</option>
+                                    <option value="screenwriting-start">Screenwriting START</option>
+                                    <option value="screenwriting-start-early">Screenwriting START (EARLY BIRD)</option>
+                                </select>
+                                <label for="program">Program</label>
+                                <i class="fas fa-graduation-cap input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating">
+                                <input type="text" id="price" name="price" readonly required>
+                                <label for="price">Price</label>
+                                <i class="fas fa-money-bill-wave input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="time" name="time" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Evening">Evening</option>
+                                </select>
+                                <label for="time">Time Preference</label>
+                                <i class="fas fa-clock input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="experience" name="experience" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label for="experience">Acting Experience</label>
+                                <i class="fas fa-theater-masks input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-field floating select-field">
+                                <select id="payment" name="payment" class="custom-select" required>
+                                    <option value=""></option>
+                                    <option value="Bank Transfer">Bank Transfer</option>
+                                    <option value="Payment Link">Paystack Payment Link</option>
+                                </select>
+                                <label for="payment">Payment Method</label>
+                                <i class="fas fa-credit-card input-icon"></i>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="loading" style="display: none;">Submitting...</div>
+                    <div id="message"></div>
+                    <div class="form-navigation">
+                        <button type="submit" class="submit-btn" id="submit-btn">Complete Registration</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Choices.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        // Initialize custom select dropdowns
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all select elements with Choices.js
+            const selectElements = document.querySelectorAll('.custom-select');
+            selectElements.forEach(select => {
+                new Choices(select, {
+                    searchEnabled: false,
+                    itemSelectText: '',
+                    shouldSort: false,
+                    position: 'auto',
+                    classNames: {
+                        containerInner: 'choices__inner custom-select-inner'
+                    }
+                });
+            });
+
+            // Update floating label for custom selects
+            const choicesContainers = document.querySelectorAll('.choices');
+            choicesContainers.forEach(container => {
+                const input = container.querySelector('.choices__input');
+                if (input) {
+                    input.addEventListener('focus', function() {
+                        const parentField = container.closest('.input-field');
+                        parentField.classList.add('is-focused');
+                    });
+                    input.addEventListener('blur', function() {
+                        const parentField = container.closest('.input-field');
+                        parentField.classList.remove('is-focused');
+                    });
+                }
+            });
+
+            // Form submission handling
+            const form = document.getElementById('enrollment-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('submit-btn').disabled = true;
+                
+                // Simulate form submission
+                setTimeout(function() {
+                    document.getElementById('loading').style.display = 'none';
+                    
+                    // Show success message
+                    const messageDiv = document.getElementById('message');
+                    messageDiv.innerHTML = `
+                        <div style="background-color: #d4edda; color: #155724; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            Registration submitted successfully! We'll contact you shortly.
+                        </div>
+                    `;
+                    
+                    // Reset form after 3 seconds
+                    setTimeout(function() {
+                        form.reset();
+                        messageDiv.innerHTML = '';
+                        document.getElementById('submit-btn').disabled = false;
+                        
+                        // Reset floating labels
+                        document.querySelectorAll('.input-field').forEach(field => {
+                            const input = field.querySelector('input, select');
+                            const label = field.querySelector('label');
+                            if (input.value === '') {
+                                label.style.top = '1rem';
+                                label.style.fontSize = '1rem';
+                            }
+                        });
+                    }, 3000);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

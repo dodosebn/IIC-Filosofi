@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Steelfish';
+    src: url('/assets/webfonts/Steelfish\ Bd.otf') format('otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.discount-pricing-table{
+    background-color: #FFDA00;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 400px;
+}
+
+.discount-pricing-table-header{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    gap: 5px;
+    background: #3e412e;
+    padding: 10px;
+}
+.discount-pricing-table-header span {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.discount-pricing-table-header span:nth-child(1) {
+    color: #000000;
+}
+.discount-pricing-table-header span:nth-child(2) {
+    color: #FFDA00;
+}
+
+.inner-price-features {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+.inner-price-features li {
+    font-size: 20px;
+    color: #000000;
+}
+.inner-price-features li i{
+    color: #3e412e;
+}
+.inner-discount-price h3{
+    font-size: 40px;
+}
+
+.inner-discount-price{
+    padding: 20px;
+}
+
+.discount-footer-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3e412e;
+    padding-top: 10px;
+    min-height: 110px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Left Circular Badge */
+.dsicount-banner-left {
+    width: 150px;
+    height: 150px;
+    border: 6px solid  #FFDA00;
+    /* border-image: linear-gradient(45deg, #FFDA00, #f14610); */
+    border-image-slice: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,0,0,0.5) 50%, rgba(62,65,46,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+    transform: translateY(-50%);
+}
+
+.discount-footer-banner .dsicount-banner-left {
+    color: #fff;
+    font-size: 10px;
+}
+
+.dsicount-banner-left .now{
+    /* margin: 3px 0; */
+    font-size: 20px;
+}
+
+.dsicount-banner-left .limit {
+    /* margin: 3px 0; */
+    font-size: 13px;
+}
+
+.dsicount-banner-left h3{
+    color: red;
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 17px;
+    font-family: 'Steelfish', sans-serif;
+}
+.dsicount-banner-left span{
+    content: "";
+    width: 40px;
+    height: 3px;
+    margin-top: -20px;
+    background: #fff;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+}
+
+/* Right Discount Section */
+.discount-banner-right {
+    text-align: right;
+    color: #FFDA00;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* font-family: Arial, sans-serif; */
+    padding-left: 100px;
+}
+
+.discount-banner-right{
+    margin-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+.discount-banner-right .early-bird-text{
+    font-size: 15px;
+    color: #FFDA00;
+}
+
+
+.discount-banner-right h3 {
+    font-size: 30px;
+    margin-top: -15px;
+    color: #FFDA00;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 428px) {
+    .discount-pricing-table{
+       
+        width: 100%;
+    }
+
+    .discount-pricing-table-header span {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    
+.discount-footer-banner {
+    height: 100px;
+}
+.dsicount-banner-left {
+    width: 130px;
+    height: 130px;
+}
+
+
+
+.dsicount-banner-left .now{
+    /* margin: 3px 0; */
+    font-size: 15px;
+}
+
+.dsicount-banner-left .limit {
+    /* margin: 3px 0; */
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.dsicount-banner-left h3{
+    font-size: 15px;
+    margin-bottom: -5px;
+    margin-top: 17px;
+}
+.dsicount-banner-left span{
+    width: 40px;
+    height: 2px;
+    margin-top: -20px;
+}
+
+/* Right Discount Section */
+.discount-banner-right {
+    gap: 5px;
+    padding-left: 100px;
+}
+
+.discount-banner-right{
+    margin-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+}
+.discount-banner-right .early-bird-text{
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFDA00;
+    text-wrap: nowrap;
+}
+
+
+.discount-banner-right h3 {
+    font-size: 20px;
+    margin-top: -15px;
+    color: #FFDA00;
+    font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    .discount-pricing-table-header span {
+        font-size: 7vw;
+    }
+    .inner-price-features li {
+        font-size: 4.7vw;
+    }
+
+    .discount-banner-right .early-bird-text{
+        font-size: 3vw;
+    }
+    
+    
+    /* .discount-banner-right h3 {
+        font-size: 20px;
+        margin-top: -15px;
+        color: #FFDA00;
+        font-weight: bold;
+    } */
+}

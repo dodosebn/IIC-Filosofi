@@ -1,0 +1,115 @@
+{
+    "user": {
+      "id": "123456",
+      "username": "culture_enthusiast",
+      "email": "user@example.com",
+      "password_hash": "$2a$12$ABC123EncryptedPasswordHash",
+      "profile": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "gender": "Male",
+        "date_of_birth": "1995-08-15",
+        "bio": "Passionate about cultural heritage and global traditions.",
+        "profile_picture": "https://example.com/profiles/user123.jpg",
+        "cover_photo": "https://example.com/covers/cover123.jpg",
+        "location": {
+          "country": "USA",
+          "state": "California",
+          "city": "Los Angeles",
+          "coordinates": {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+          }
+        },
+        "language_preferences": ["English", "Spanish", "French"],
+        "privacy_settings": {
+          "profile_visibility": "public",
+          "email_visibility": "private",
+          "show_location": false
+        }
+      },
+      "account_status": {
+        "is_active": true,
+        "is_verified": true,
+        "suspension_reason": null,
+        "joined_date": "2023-04-10T14:30:00Z",
+        "last_login": "2025-02-28T12:45:00Z",
+        "login_ip": "192.168.1.10",
+        "two_factor_enabled": true
+      },
+      "social_links": {
+        "facebook": "https://facebook.com/user123",
+        "twitter": "https://twitter.com/user123",
+        "instagram": "https://instagram.com/user123",
+        "linkedin": "https://linkedin.com/in/user123"
+      },
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "sms": false,
+          "push": true
+        },
+        "content_preferences": {
+          "topics_of_interest": ["Cultural Heritage", "Folklore", "History"],
+          "show_suggested_content": true
+        }
+      },
+      "posts": [
+        {
+          "post_id": "987654",
+          "content": "Exploring the ancient ruins of Machu Picchu! 🏛️",
+          "media": [
+            {
+              "type": "image",
+              "url": "https://example.com/posts/machu_picchu.jpg"
+            }
+          ],
+          "likes": 342,
+          "comments": 57,
+          "shares": 20,
+          "created_at": "2025-02-15T10:00:00Z"
+        }
+      ],
+      "connections": {
+        "followers_count": 1200,
+        "following_count": 305,
+        "blocked_users": ["987321", "654987"]
+      },
+      "messages": [
+        {
+          "message_id": "567890",
+          "sender_id": "987321",
+          "receiver_id": "123456",
+          "content": "Hey! Are you attending the cultural heritage conference next week?",
+          "sent_at": "2025-02-27T18:45:00Z",
+          "seen": true
+        }
+      ],
+      "transactions": [
+        {
+          "transaction_id": "T123ABC",
+          "type": "membership_subscription",
+          "amount": 49.99,
+          "currency": "USD",
+          "status": "completed",
+          "date": "2025-01-01T00:00:00Z",
+          "payment_method": "credit_card"
+        }
+      ],
+      "activity_log": [
+        {
+          "action": "liked_post",
+          "target_id": "987654",
+          "timestamp": "2025-02-20T12:34:00Z"
+        },
+        {
+          "action": "commented_on_post",
+          "target_id": "987654",
+          "timestamp": "2025-02-21T14:00:00Z",
+          "comment": "This place looks amazing! Can't wait to visit!"
+        }
+      ]
+    }
+  }
+  

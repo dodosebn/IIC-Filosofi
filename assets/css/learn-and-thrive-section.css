@@ -1,0 +1,174 @@
+/* Modern Section Styling */
+.learn-and-thrive-section {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    position: relative;
+    bottom: 0rem;
+    overflow: hidden;
+}
+
+.learn-and-thrive-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.learn-and-thrive-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Modern Typography */
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #212529;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 2px;
+}
+
+.modern-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+}
+
+.highlight {
+    background-color: rgba(79, 172, 254, 0.1);
+    padding: 20px;
+    border-left: 3px solid #4facfe;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Modern Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.text-block {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Modern Button */
+.modern-button a{
+    text-decoration: none;
+        color: white;
+
+}
+.modern-button  {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background-color: #212529;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* .modern-button :hover {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+} */
+
+.modern-button  svg {
+    transition: transform 0.3s ease;
+}
+
+.modern-button :hover svg {
+    transform: translateX(3px);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delayed {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .learn-and-thrive-container {
+        padding: 0 30px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .learn-and-thrive-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .modern-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .learn-and-thrive-container {
+        padding: 0 20px;
+    }
+    
+    .modern-button {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+}
