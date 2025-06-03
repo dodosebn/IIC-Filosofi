@@ -42,9 +42,7 @@ header {
   position: relative;
   min-height: 60px; /* ✅ Prevent layout shift */
 }
-.logo-container{
-   background-color: inherit;
-}
+
 .nav-center{
     background-color: inherit; 
   transition: all 0.3s ease-in-out;
@@ -101,7 +99,7 @@ header {
   border: none;
   position: absolute;
   right: -0.9rem;
-  top: 0.4rem;
+  top: -0.3rem;
   z-index: 110;
 }
 
