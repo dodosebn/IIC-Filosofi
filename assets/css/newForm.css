@@ -1,4 +1,8 @@
-      .contact-methods {
+body{
+    font-family: "Dosis", Arial, Sans-serif !important;
+
+}
+.contact-methods {
         display: flex;
         justify-content: center;
         gap: 1rem;
