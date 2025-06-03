@@ -219,102 +219,6 @@ margin-top: 22px;
     }
   </style>
 <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Added for better box model handling */
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.brand-logo img {
-  height: 40px;
-  width: auto;
-  max-height: 100%;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
-  backdrop-filter: blur(8px); /* keeps header readable on scroll */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  min-height: 60px; /* prevent layout shift */
-}
-
-.nav-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 2;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Lato", serif;
-  font-weight: 700;
-  font-style: normal;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #4facfe;
-}
-
-.register-btn {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.register-btn a {
-  text-align: center;
-  color: #333;
-  background-color: #fff;
-  padding: 0.6rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: #fff; /* Menu button white */
-  background: none;
-  border: none;
-  position: absolute;
-  right: 2rem;
-  top: 0.3rem; /* Adjusted upward for better alignment */
-  z-index: 110;
-}
 /* Main slider container */
 .slider {
     position: relative;
@@ -358,93 +262,8 @@ header {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Changed from flex-start to center for full centering */
-  }
-
-  /* Prevent flex-grow on mobile so items don’t stretch */
-  .brand-logo,
-  .nav-center,
-  .register-btn {
-    flex: none;
-  }
-
-  /* Remove horizontal margins from navbar children for perfect centering */
-  .navbar > * {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  /* Add vertical spacing between navbar items */
-  .navbar > * + * {
-    margin-top: 1rem;
-  }
-
-  .nav-center {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .nav-center.active {
-    display: flex;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-left: 0;   /* Reset ul padding */
-    margin-left: 0;    /* Reset left margin */
-    margin-right: 0;   /* Reset right margin */
-    max-width: 300px;  /* Optional: limits width to center nicely */
-    text-align: center;
-  }
-
-  .nav-links li {
-    width: 100%;
-    font-weight: bolder;
-    text-transform: uppercase;
-  }
-
-  .nav-links a {
-    color: #fff;
-    width: 100%;
-    display: block;
-  }
-
-  .register-btn {
-    width: 100%;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .register-btn a {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #fff;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .action-text:hover {
-    color: #4facfe;
-  }
-
-}
-
 </style>
+<link rel="stylesheet" href="./assets/css/newHeader.css">
 <script src="./assets/js/newHeader.js"></script>
 <script>
   function handleScroll() {
@@ -485,32 +304,31 @@ header {
 
   
  
-                             <header class="lato-regular">
+<header class="website-header">
     <nav class="navbar">
-               
-                  <a class="brand-logo desktop-logo"
-                   href="/"><img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full"  alt="" loading="lazy"></a>                
-                 
+        <div class="logo-container">
+            <a class="brand-logo desktop-logo" href="/">
+                <img src="/assets/images/logo/logo-filosofi-blk.png" class="attachment-full size-full" alt="" loading="lazy">
+            </a>                
             <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-      </button>
-
-              <div class="nav-center" id="nav-center">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="program.html">Program</a></li>
-                    <li><a href="industry.html">Industry</a></li>
-
-          <li><a href="pros.html">Pros</a></li>
-        </ul>
-                 
-           <div class="register-btn" id="register-btn">
-          <a href="screen-acting-start.html">Register Now</a>
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-      </div>
+             
+        <div class="nav-center" id="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="industry.html">Industry</a></li>
+                <li><a href="pros.html">Pros</a></li>
+            </ul>
+                 
+            <div class="register-btn" id="register-btn">
+                <a href="screen-acting-start.html">Register Now</a>
+            </div>
+        </div>
     </nav>
-  </header>
-
+</header>
            </div>
     </div>
                

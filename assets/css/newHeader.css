@@ -5,7 +5,7 @@
 }
 
 body {
-  padding-top: 80px; /* ✅ Prevent content from hiding behind the fixed header */
+  padding-top: 80px; 
 }
 
 .brand-logo {
@@ -21,7 +21,8 @@ body {
 }
 
 header {
-  background-color: #000;
+    background-color: #000;
+      transition: background-color 0.3s ease;
   padding: 1rem 2rem;
   position: fixed; /* ✅ Stays on top */
   top: 0;
@@ -32,6 +33,7 @@ header {
   text-transform: uppercase;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -39,6 +41,13 @@ header {
   flex-wrap: wrap;
   position: relative;
   min-height: 60px; /* ✅ Prevent layout shift */
+}
+.logo-container{
+   background-color: inherit;
+}
+.nav-center{
+    background-color: inherit; 
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-center {
@@ -91,45 +100,49 @@ header {
   background: none;
   border: none;
   position: absolute;
-  right: 1.5rem;
-  top: -0.5rem; /* Moved up a bit */
+  right: -0.9rem;
+  top: 0.4rem;
   z-index: 110;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  
   .navbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  /* Remove flex-grow to avoid uneven spacing */
   .brand-logo,
   .nav-center,
   .register-btn {
-    flex: none; /* prevent stretching */
+    flex: none; 
   }
 
-  /* Center all navbar items and remove horizontal margin */
   .navbar > * {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
-  /* Add vertical spacing between items */
   .navbar > * + * {
     margin-top: 1rem;
   }
 
   .nav-center {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.75);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  position: fixed;      
+  top: 70px;  
+  left: 0;
+  right: 0;
+  width: 100vw;          
+  z-index: 99;
+}
+
 
   .nav-center.active {
     display: flex;
@@ -141,10 +154,10 @@ header {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding-left: 0;    /* Reset default ul padding */
-    margin-left: 0;     /* Reset left margin */
-    margin-right: 0;    /* Reset right margin */
-    max-width: 300px;   /* Optional to help centering */
+    padding-left: 0;    
+    margin-left: 0;     
+    margin-right: 0;   
+    max-width: 300px;   
     text-align: center;
   }
 
