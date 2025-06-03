@@ -8,7 +8,7 @@ body, html{
   overflow-x: hidden;
 }
 
-.about-hero {
+ .about-hero {
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
           url("assets/images/about-us/about-hero-bg.jpg");
         background-size: cover;
@@ -16,6 +16,8 @@ body, html{
         color: white;
         padding: 50px 0 50px;
         text-align: center;
+          font-family: "Dosis", Arial, Sans-serif !important;
+
       }
 @media (max-width: 768px) {
     .about-hero {
@@ -38,12 +40,18 @@ body, html{
         margin: 0 auto;
       }
 
+
+p{
+  color: #495057;
+}
+
 button:focus{
   outline: none !important;
 }
 
 .sans-serif-font {
-  font-family: "Dosis", Arial, Sans-serif !important;
+    font-family: "Dosis", Arial, Sans-serif !important;
+
 }
 
 #form_number::-webkit-outer-spin-button,
