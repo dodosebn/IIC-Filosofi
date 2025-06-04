@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.influencerFooterCol{
+  color: #4facfe;
+}
 body, html{
   overflow-x: hidden;
     font-family: "Lato", serif;
@@ -2255,6 +2257,11 @@ border-bottom: 1px solid #fff;
   .site-footer .footer-widgets .footer-widget ul {
     margin-bottom: 0px;
   }
+  .new-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .site-footer .footer-widgets .footer-widget ul ul {
@@ -2282,7 +2289,7 @@ border-bottom: 1px solid #fff;
 }
 
 .site-footer .footer-widgets .footer-widget ul li {
-  padding: 0.6666666667rem 0;
+  /* padding: 0.6666666667rem 0; */
   font-weight: 500;
 }
 
