@@ -98,10 +98,11 @@
              
         <div class="nav-center" id="nav-center">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+               <li><a href="index.html">Home</a></li>
                 <li><a href="program.html">Program</a></li>
                 <li><a href="industry.html">Industry</a></li>
-                <li><a href="pros.html">Pros</a></li>
+                <li><a href="alumni.html" >Alumini</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
                  
             <div class="register-btn" id="register-btn">
@@ -224,44 +225,7 @@ Our team includes enthusiastic younger members who share the company's vision of
     </div>
 </div>
 
-        <!-- Values Section -->
-        <section class="values-section">
-          <div class="container">
-            <div class="values-content">
-              <h2 class="section-title">Our Core Values</h2>
-           
-
-              <div class="values-grid">
-                <div class="value-card">
-                 
-                  <h3 class="modern-text" style="font-size: 1.5rem; font-weight: bold;">Vision</h3>
-                  <p style="color: #f1f1f1;">
-                    To ensure every professional is skilled, disciplined, and
-                    empowered to excel with integrity.
-                  </p>
-                </div>
-
-                <div class="value-card">
-                  
-                  <h3 class="modern-text" style="font-size: 1.5rem; font-weight: bold;">Mission</h3>
-                  <p style="color: #f1f1f1;">
-                    To transform youthful hyper-creativity into impactful
-                    productivity for a better future.
-                  </p>
-                </div>
-
-                <div class="value-card">
-                 
-                  <h3 class="modern-text" style="font-size: 1.5rem; font-weight: bold;">Promise</h3>
-                  <p style="color: #f1f1f1;">
-                    To build respectable brands and gain the trust of our
-                    community.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+     
 
     <!-- Footer-->
     <footer class="site-footer">
@@ -273,27 +237,12 @@ Our team includes enthusiastic younger members who share the company's vision of
         </div>
 
         <div class="footer-menu mt-4">
-          <ul class="list-unstyled list-inlinetrue footer-menu-links">
-            <li class="mr-4 lato-regular notranslate">
-              <a href="alumni.html">ALUMNI</a>
-            </li>
-            <li class="mr-4 lato-regular notranslate">
-              <a href="faq.html">FAQ </a>
-            </li>
-            <li class="mr-4 lato-regular notranslate">
-              <a href="about.html">ABOUT</a>
-            </li>
-            <li class="mr-4 lato-regular notranslate">
-              <a href="connect.html">CONNECT</a>
-            </li>
-          </ul>
-          <ul class="list-unstyled list-inlinetrue">
-            <li
-              class="mr-4 lato-regular notranslate desktop-aff-btn text-black openAffiliateModal"
-            >
-              <a href="influencer.html">INFLUENCER</a>
-            </li>
-          </ul>
+        <ul class="list-unstyled list-inlinetrue footer-menu-links">
+              <li class="mr-4 lato-regular notranslate"><a href="faq.html">FAQ </a></li>
+                            <li class="mr-4 lato-regular notranslate"><a href="influencer.html" >INFLUENCER</a></li>
+              <li class="mr-4 lato-regular notranslate"><a href="connect.html" >CONNECT</a></li>
+            </ul>
+        
         </div>
 
         <div class="mt-4 social-icons-mobile">
@@ -463,137 +412,11 @@ Our team includes enthusiastic younger members who share the company's vision of
         transform: scale(1.03);
       }
 
-      /* Team Section */
-      .team-section {
-        padding: 100px 0;
-        background-color: white;
-      }
-
-      .section-title {
-        text-align: left;
-        font-size: 2.5rem;
-        color: var(--primary-color);
-        margin-bottom: 15px;
-      }
-
-      .section-subtitle {
-        text-align: center;
-        font-size: 1.2rem;
-        color: #666;
-        max-width: 700px;
-        margin: 0 auto 50px;
-      }
-
-      .team-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      }
-
-      .team-member {
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: var(--transition);
-      }
-
-      .team-member:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .member-image {
-        height: 350px;
-        overflow: hidden;
-      }
-
-      .member-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: var(--transition);
-      }
-
-      .team-member:hover .member-image img {
-        transform: scale(1.05);
-      }
-
-      .member-info {
-        padding: 25px;
-      }
-
-      .member-info h3 {
-        margin: 0 0 5px;
-        color: var(--primary-color);
-      }
-
-      .bio {
-        margin: 0;
-        color: #666;
-      }
+      
+      
 
       /* Values Section */
-      .values-section {
-        padding: 100px 0;
-        background: linear-gradient(
-          135deg,
-          var(--primary-color),
-          var(--secondary-color)
-        );
-        color: white;
-      }
-
-      .values-content {
-        max-width: 1100px;
-        margin: 0 auto;
-      }
-
-      .values-section .section-title,
-      .values-section .section-subtitle {
-        color: white;
-      }
-
-      .values-section .section-subtitle {
-        opacity: 0.8;
-      }
-
-      .values-grid {
-        display: grid;
-grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        margin-top: 50px;
-      }
-
-      .value-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding: 40px 30px;
-        transition: var(--transition);
-      }
-
-      .value-card {
-        transform: translateY(-10px);
-        background-color: rgba(255, 255, 255, 0.15);
-      }
-
-      .value-icon {
-        font-size: 2.5rem;
-        color: var(--highlight-color);
-        margin-bottom: 20px;
-      }
-
-      .value-card h3 {
-        margin-top: 0;
-        color: #f1f1f1;
-        margin-bottom: 15px;
-      }
-
-      .value-card p {
-        margin: 0;
-        opacity: 0.9;
-      }
+      
 
       /* Updated CTA Section */
       .cta-section {
