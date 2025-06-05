@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .influencerFooterCol{
-  color: #4facfe;
+  color: #53C0F0;
 }
 body, html{
   overflow-x: hidden;
@@ -692,7 +692,7 @@ b{
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(90deg, #53C0F0 0%, #00f2fe 100%);
 }
 
 .hero-text {
@@ -795,7 +795,7 @@ b{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #4facfe;
+  color: #53C0F0;
   font-weight: 600;
   transition: color 0.3s ease;
 }

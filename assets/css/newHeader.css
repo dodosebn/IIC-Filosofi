@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  min-height: 60px; /* ✅ Prevent layout shift */
+  min-height: 60px; /* Prevent layout shift */
 }
 
 .nav-center{
@@ -71,7 +71,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #4facfe;
+  color: #53C0F0;
 }
 
 .register-btn {
@@ -188,6 +188,6 @@ header {
   }
 
   .action-text:hover {
-    color: #4facfe;
+    color: #53C0F0;
   }
 }
