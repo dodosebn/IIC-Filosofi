@@ -156,16 +156,91 @@ document.addEventListener("DOMContentLoaded", function () {
    </script> 
 <link rel="stylesheet" href="./assets/css/newHeader.css">
 <script src="./assets/js/newHeader.js"></script>
+
+<style>
+  /* Updated Content Section Styles */
+  .content-section {
+    padding-left: 0;
+    background-color: #f5f5f5;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inner-container {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .text-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .industry-image-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .industry-image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-box h4 {
+    margin-bottom: 0.5rem;
+    color: #53C0F0;
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .text-box p {
+    color: #212529;
+    margin-bottom: 0.25rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .text-content {
+      flex-direction: column;
+    }
+    
+    .text-box, .industry-image-section {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    .industry-image-section {
+      order: -1; /* Move image to top on mobile */
+    }
+  }
+</style>
   </head>
   <body>
 
- 
-
-
   <!-- Google Translate Widget -->
   <div id="google_translate_element" style="display: none;"></div>
-
-
 
    <div class="overlay">
    <div class="website-header "> 
@@ -196,10 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
 </header>
 
-
-    
     <!-- End Navbar-->
-
 
     <style>
       .image-container-sec-2 {
@@ -288,11 +360,6 @@ document.addEventListener("DOMContentLoaded", function () {
           height: 300px;
       }
       }
-      /* @media (max-width: 768px) {
-        .image-container-sec-2 {
-
-        }
-      } */
     </style>
 
     <article class="entry">
@@ -308,22 +375,12 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </section>
 
-
-
-      <!-- =========SECTION ONE =========== -->
-     <div class="industry-image-section">
-      <img src="assets/images/industry.png" alt="INDUSTRY">
-     </div>
-
-           
-      <!-- ======================================UNESCO REOORT SUMMARY================== -->
-
 <div class="content-section">
   <div class="inner-container">
     <div class="text-content">
       <div class="text-box">
-        <h4 class="open-sans-bold ">Our not-so-secret plan: Keep millions of film jobs and <br /> billions in box-office earnings in Africa.</h4>
-        <p class="lato-regular text-dark ">A UNESCO report published in 2021 presents an encouraging outlook for Africa's 
+        <h4 class="open-sans-bold">Our not-so-secret plan: Keep millions of film jobs and  billions in box-office earnings in Africa.</h4>
+        <p class="lato-regular text-dark">A UNESCO report published in 2021 presents an encouraging outlook for Africa's 
         film and audiovisual industry across 54 African countries. Although the report 
         is comprehensive and addresses various topics, the financial and employment projections 
         are particularly significant. It indicates that if major changes are implemented in the 
@@ -331,79 +388,12 @@ document.addEventListener("DOMContentLoaded", function () {
         million jobs. Those changes are in the form of training, professionalism, appealing 
         story plots, and high-quality production value films and series.</p>
       </div>
+      <div class="industry-image-section">
+        <img src="assets/images/industry.png" alt="INDUSTRY">
+      </div>
     </div>
   </div>
 </div>
-
-<style>
-.content-section {
-  padding-left: 0;
-  background-color: #f5f5f5; 
-  padding-top: 4rem;
-  padding-bottom: 4rem;/* white-smoke */
-  margin-top: 0.5rem;
-  /* height: 60rem; */
-  display: flex;               /* center container horizontally */
-  justify-content: center;     /* center container horizontally */
-}
-
-.inner-container {
-  width: 66.666667%;           /* 2/3 width of the viewport */
-}
-
-.text-content {
-  width: 100%;                 /* full width inside inner-container */
-  margin-top: 0.5rem;
-  padding-top: 1rem;
-  padding-left: 1.75rem;
-  padding-right: 0.75rem;
-  padding-bottom: 1rem;
-  position: relative;
-}
-
-.text-box {
-  padding-right: 1.5rem;
-  text-align: left;           /* paragraphs aligned left */
-}
-
-.text-box h4 {
-  margin-bottom: 0.5rem;
-  color: #53C0F0;
-  /* font-family: 'Open Sans', sans-serif; */
-  font-size: 1.7rem;
-  font-weight: 900;
-  /* text-align: center;        */
-}
-
-.text-box p {
-  color: #212529;
-  margin-bottom: 0.25rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-/* Mobile: center all text inside text-box and reduce padding */
-@media (max-width: 768px) {
-  .inner-container {
-    width: 100%; /* full width on mobile */
-  }
-  .text-content {
-    padding-left: 0.5rem;  /* optional: small padding */
-    padding-right: 0.5rem; /* optional: small padding */
-  }
-  .text-box {
-    text-align: left;
-    padding-right: 0;
-  }
-}
-
-
-</style>
-
-
-   
 
         <div class="container pb-lg-7 main lato-regular">
   
@@ -442,17 +432,7 @@ document.addEventListener("DOMContentLoaded", function () {
      
 
       </div>
-
-
-                
-      </div>
     </article>
-
-    
-   
-    
-  
-    
 
     <!-- Footer-->
      <footer class="site-footer">
@@ -477,9 +457,6 @@ document.addEventListener("DOMContentLoaded", function () {
              
               <li class=""><a href="https://x.com/ideaiscapital" target="_blank"><img src="/assets//icons//x-icon.png"  alt="icon"></a></li>
               <li class=""><a href="https://www.linkedin.com/company/ideaiscapital" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
-<!-- 
-              <li><a href="https://t.me/ideaiscapital"><img src="/assets/icons/telegram-icon-white.png" class="telegram-icon" alt="icon"></a></li>
-              <li><a href="https://wa.me/2349043324968"><img src="/assets/icons/whatsapp-phone-white.png" alt="icon"></a></li> -->
             </ul>
           </div>
       </div>
@@ -496,8 +473,6 @@ document.addEventListener("DOMContentLoaded", function () {
   </footer>
 
     <!-- End Footer-->
-
-
 
     <!-- javascript files-->
     <!-- jquery-->
@@ -523,7 +498,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Google Translate Script -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    
   </body>
 </html>
