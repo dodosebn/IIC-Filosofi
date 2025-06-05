@@ -290,6 +290,27 @@ document.addEventListener("DOMContentLoaded", function () {
         align-items: center;
         margin-top: 8px;
       }
+@media (max-width: 768px) {
+  /* Full-bleed image solution for mobile */
+  .industry-image-section {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  
+  .industry-image-section img {
+    width: 100vw !important;
+    max-width: none !important;
+    height: auto;
+    display: block;
+  }
+  
+  /* Ensure no horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
       .tabs-comtainer{
         display: flex;
         flex-direction: column;

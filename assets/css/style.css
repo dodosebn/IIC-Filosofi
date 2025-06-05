@@ -5,6 +5,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
 .influencerFooterCol{
   color: #53C0F0;
 }
